@@ -46,7 +46,7 @@ export const Layout = ({
          */
         rootElement={document.getElementById('__next') as HTMLElement}
         text="☕ Chat with Ali"
-        color="#8e32e9"
+        color="#8E32E9"
       />
       <Footer />
     </>

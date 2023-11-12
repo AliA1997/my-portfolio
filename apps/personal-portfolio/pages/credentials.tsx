@@ -81,13 +81,6 @@ const CredentialsPage = () => {
                     <h4>{item.date}</h4>
                     <h3>{item.degree}</h3>
                     <h5>{item.university}</h5>
-                    {item.description && (
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: item.description,
-                        }}
-                      />
-                    )}
                   </div>
                 ))}
               </div>

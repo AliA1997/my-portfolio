@@ -17,7 +17,7 @@
   "credentials": {
     "heading": "Credentials",
     "caption": "A little on Sal",
-    "media": "/assets/credentials.png",
+    "media": "/assets/credentials.svg",
     "button": {
       "link": "/credentials",
       "icon": {
@@ -29,7 +29,7 @@
   "cv": {
     "heading": "Portfolio",
     "caption": "CV",
-    "media": "/assets/portfolio.png",
+    "media": "/assets/portfolio.svg",
     "button": {
       "link": "/portfolio",
       "icon": {
