@@ -2,7 +2,7 @@ import {
   Layout,
   PortfolioFooter,
   PortfolioHeader,
-} from '@msanvarov/core-components';
+} from '@aalhaddad/core-components';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticPaths, GetStaticProps } from 'next';

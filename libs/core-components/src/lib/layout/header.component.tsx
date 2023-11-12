@@ -2,7 +2,7 @@ import {
   toggleDisplayMobileNavbar,
   useAppDispatch,
   useAppSelector,
-} from '@msanvarov/store';
+} from '@aalhaddad/store';
 import classNames from 'classnames';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -45,14 +45,14 @@ export const Header = () => {
             </ul>
             <a
               className="theme-btn"
-              href="https://calendly.com/msalanvarov"
+              href="https://calendly.com/ali-qamar-labs/30min"
               target="_blank"
               rel="noreferrer noopener"
             >
               <span role="img" aria-label="coffee">
                 ☕
               </span>{' '}
-              Chat with Sal
+              Chat with Ali
             </a>
           </nav>
 

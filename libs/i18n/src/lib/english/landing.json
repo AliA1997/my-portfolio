@@ -1,10 +1,10 @@
 {
   "bio": {
-    "heading": "Sal Anvarov.",
-    "caption": "Designer & Full Stack Developer",
-    "description": "System designer, strategist and web development guru. Builds UX rich and performant websites. Sal had the privilege of building software and consulting for start-ups and big corporations.",
-    "descriptionExtended": "Currently contributing to the design and development efforts at <span class='text-primary-color'>Oproma</span>.",
-    "location": "📍 Based in Toronto.",
+    "heading": "Ali Alhaddad.",
+    "caption": "Full Stack Engineer",
+    "description": "A skilled full-stack engineer in React and C# implementing microservices architecture, managing private npm packages, and excelling in SQL Server to MySQL conversion, UI design, and Next.js integration.",
+    "descriptionExtended": "Currently contributing to the design and development efforts at <span class='text-primary-color'>Ensurem</span>.",
+    "location": "📍 Based in Tampa.",
     "media": "/assets/3d-headshot.png",
     "button": {
       "link": "/bio",
@@ -55,7 +55,6 @@
     "caption": "Explore offerings",
     "link": "/offerings",
     "icons": [
-      "iconoir-figma",
       "iconoir-input-output",
       "iconoir-design-pencil",
       "iconoir-code"
@@ -81,11 +80,11 @@
     },
     "profiles": [
       {
-        "link": "https://github.com/msanvarov/personal-portfolio",
+        "link": "https://github.com/AliA1997",
         "icon": "iconoir-github"
       },
       {
-        "link": "https://linkedin.com/in/sal-anvarov",
+        "link": "https://www.linkedin.com/in/ali-alhaddad/",
         "icon": "iconoir-globe"
       }
     ]
@@ -93,15 +92,15 @@
   "facts": {
     "quickFacts": [
       {
-        "count": "6+",
+        "count": "5+",
         "label": "YEARS <br /> EXPERIENCE"
       },
       {
-        "count": "60+",
+        "count": "2+",
         "label": "CONSULTATIONS <br /> CONDUCTED"
       },
       {
-        "count": "12+",
+        "count": "7+",
         "label": "PRODUCTION <br /> APPLICATIONS"
       }
     ]

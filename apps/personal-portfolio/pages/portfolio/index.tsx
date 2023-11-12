@@ -1,5 +1,5 @@
-import { Layout } from '@msanvarov/core-components';
-import { Post } from '@msanvarov/store';
+import { Layout } from '@aalhaddad/core-components';
+import { Post } from '@aalhaddad/store';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticProps } from 'next';
@@ -47,7 +47,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
           </h1>
           <div className="row">
             <div className="col-md-4">
-              {caseStudies.slice(0, 2).map((study, i) => (
+              {[...caseStudies.slice(0, 2), ...caseStudies.slice(5, 6), ...caseStudies.slice(6, 7)].map((study, i) => (
                 <div data-aos="zoom-in" key={i}>
                   <div className="project-item shadow-box">
                     <Link
@@ -88,7 +88,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
                 <img src="/assets/star-2.png" alt="Star" />
               </h1>
               <div className="d-flex align-items-start gap-24">
-                {caseStudies.slice(2, 4).map((study, i) => (
+                {caseStudies.slice(2, 3).map((study, i) => (
                   <div data-aos="zoom-in" className="flex-1" key={i}>
                     <div className="project-item shadow-box">
                       <Link
@@ -127,7 +127,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
                 ))}
               </div>
               <div className="d-flex align-items-start gap-24">
-                {caseStudies.slice(4, 6).map((study, i) => (
+                {caseStudies.slice(3, 5).map((study, i) => (
                   <div data-aos="zoom-in" className="flex-1" key={i}>
                     <div className="project-item shadow-box">
                       <Link
@@ -165,6 +165,8 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
                   </div>
                 ))}
               </div>
+
+ 
             </div>
           </div>
         </div>

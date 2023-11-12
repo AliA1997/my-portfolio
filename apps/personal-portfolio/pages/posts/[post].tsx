@@ -1,5 +1,5 @@
-import { BlogNavbar, Layout } from '@msanvarov/core-components';
-import { Post } from '@msanvarov/store';
+import { BlogNavbar, Layout } from '@aalhaddad/core-components';
+import { Post } from '@aalhaddad/store';
 import { DiscussionEmbed } from 'disqus-react';
 import fs from 'fs';
 import matter from 'gray-matter';

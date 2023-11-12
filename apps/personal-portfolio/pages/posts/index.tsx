@@ -1,11 +1,11 @@
-import { BlogNavbar, Layout } from '@msanvarov/core-components';
+import { BlogNavbar, Layout } from '@aalhaddad/core-components';
 import {
   Post,
   setCategories,
   setPosts,
   setTags,
   useAppDispatch,
-} from '@msanvarov/store';
+} from '@aalhaddad/store';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticProps } from 'next';
@@ -22,13 +22,14 @@ export const getStaticProps: GetStaticProps<PostsPageProps> = () => {
       const fileContents = fs.readFileSync(path.join(POSTS_PATH, filePath));
       const fileMetadata = fs.statSync(path.join(POSTS_PATH, filePath));
       const { content, data } = matter(fileContents);
-
+      console.log('content:', content);
+      console.log('data:', data);
       return {
         content,
         metadata: {
           ...data,
-          created: fileMetadata.ctime.toISOString(),
-          modified: fileMetadata.mtime.toISOString(),
+          created: new Date(data.publish_date).toISOString(),
+          modified: new Date(data.publish_date).toISOString(),
         },
         filePath,
       };

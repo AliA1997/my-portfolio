@@ -1,6 +1,6 @@
 import { ValidationError, useForm } from '@formspree/react';
-import { Layout } from '@msanvarov/core-components';
-import { en } from '@msanvarov/i18n';
+import { Layout } from '@aalhaddad/core-components';
+import { en } from '@aalhaddad/i18n';
 import { useEffect, useState } from 'react';
 import { Alert, Form } from 'reactstrap';
 
@@ -79,7 +79,7 @@ const ContactPage = () => {
                 <li>
                   <a
                     className="shadow-box"
-                    href="https://linkedin.com/in/sal-anvarov"
+                    href="https://www.linkedin.com/in/ali-alhaddad/"
                     target="_blank"
                     rel="noreferrer noopener"
                   >

@@ -4,7 +4,7 @@
     "mail": {
       "heading": "MAIL",
       "icon": "iconoir-mail",
-      "links": ["sal@dezzign.studio", "msalanvarov@gmail.com"]
+      "links": ["ali@qamarlabs.com", "devmtnali@gmail.com"]
     },
     "phone": {
       "heading": "CONTACT",
@@ -12,7 +12,7 @@
       "links": [
         {
           "text": "Calendly",
-          "href": "https://calendly.com/msalanvarov"
+          "href": "https://calendly.com/ali-qamar-labs/30min"
         }
       ]
     },
@@ -20,18 +20,18 @@
       "heading": "LOCATION",
       "icon": "iconoir-pin-alt",
       "type": "Location",
-      "location": "Toronto, Canada"
+      "location": "Tampa, FL, USA"
     }
   },
   "profiles": {
     "heading": "External",
     "profiles": [
       {
-        "link": "https://github.com/msanvarov",
+        "link": "https://github.com/AliA1997",
         "icon": "iconoir-github"
       },
       {
-        "link": "https://linkedin.com/in/sal-anvarov",
+        "link": "https://www.linkedin.com/in/ali-alhaddad/",
         "icon": "iconoir-linkedin"
       }
     ]

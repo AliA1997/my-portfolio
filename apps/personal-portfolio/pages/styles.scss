@@ -1,6 +1,6 @@
 // TODO: Break up
 :root {
-  --primary_color: #5b78f6;
+  --primary_color: #8e32e9;
   --dark: #323232;
 }
 
@@ -582,7 +582,8 @@ ol {
   .logo {
     display: inline-block;
     z-index: 16;
-
+    height: 10rem;
+    width: 10rem;
     img {
       display: block;
     }
@@ -865,6 +866,20 @@ ol {
         font-weight: 400;
         margin: 0;
       }
+
+      .part-time {
+        color: #FFFFFF;
+        background-color: #380968;
+        font-size: 14px;
+        opacity: 0.6;
+        font-weight: 900;
+        width: 20%;
+        border-radius: 5px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin: 0;
+        padding: 0.5rem 0.5rem 0.5rem 0rem;
+      }
     }
   }
 }
@@ -936,7 +951,7 @@ ol {
 
 .project-details-wrap {
   .project-details-img {
-    height: 550px;
+    height: 400px;
     position: relative;
     margin-bottom: 50px;
 
@@ -1039,6 +1054,7 @@ ol {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    object-position: left top;
     border-radius: 30px;
   }
 
@@ -1051,6 +1067,9 @@ ol {
   .project-about-2 {
     padding: 36px;
     gap: 80px;
+    .left-details.extra-width {
+      padding: 30px 15px;
+    }
 
     .left-details {
       position: relative;

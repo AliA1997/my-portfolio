@@ -1,4 +1,4 @@
-import { Post } from '@msanvarov/store';
+import { Post } from '@aalhaddad/store';
 import Link from 'next/link';
 import Moment from 'react-moment';
 import { Form } from 'reactstrap';

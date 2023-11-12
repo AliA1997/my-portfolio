@@ -26,7 +26,7 @@ export const Footer = () => {
             </li>
           </ul>
           <p className="copyright">
-            Made with 💙 and ☕ by <span>Sal Anvarov</span>
+            Made with 💙 and ☕ by <span>Ali Alhaddad</span>
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import { Layout } from '@msanvarov/core-components';
-import { en } from '@msanvarov/i18n';
+import { Layout } from '@aalhaddad/core-components';
+import { en } from '@aalhaddad/i18n';
 import classNames from 'classnames';
 import Link from 'next/link';
 import { Container } from 'reactstrap';

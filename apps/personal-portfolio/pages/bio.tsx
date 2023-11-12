@@ -1,5 +1,5 @@
-import { Layout, getThemedContent } from '@msanvarov/core-components';
-import { en } from '@msanvarov/i18n';
+import { Layout, getThemedContent } from '@aalhaddad/core-components';
+import { en } from '@aalhaddad/i18n';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 
@@ -37,11 +37,12 @@ const BioPage = () => {
                 <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                 <h3>{en.bio.experience.heading}</h3>
                 <ul>
-                  {en.bio.experience.experience.map((item, index) => (
+                  {en.bio.experience.experience.map((item: any, index: number) => (
                     <li key={index}>
                       <p className="date">{item.date}</p>
                       <h2>{item.title}</h2>
                       <p className="type">{item.company}</p>
+                      {item.isPartTime && <p className="part-time">Part Time</p>}
                     </li>
                   ))}
                 </ul>
@@ -52,7 +53,7 @@ const BioPage = () => {
                 <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                 <h3>{en.bio.education.heading}</h3>
                 <ul>
-                  {en.bio.education.education.map((item, index) => (
+                  {en.bio.education.education.map((item: any, index: number) => (
                     <li key={index}>
                       <p className="date">{item.date}</p>
                       <h2>{item.degree}</h2>
@@ -123,7 +124,7 @@ const BioPage = () => {
                   <div className="about-profile-box info-box shadow-box h-full">
                     <img src="/assets/bg1.png" alt="BG" className="bg-img" />
                     <div className="inner-profile-icons shadow-box">
-                      {en.bio.profiles.profiles.map((item, index) => (
+                      {en.bio.profiles.profiles.map((item: any, index: number) => (
                         <Link href={item.link} key={index}>
                           <i className={item.icon} />
                         </Link>

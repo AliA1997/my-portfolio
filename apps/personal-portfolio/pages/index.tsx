@@ -1,5 +1,5 @@
-import { Layout, getThemedContent } from '@msanvarov/core-components';
-import { en } from '@msanvarov/i18n';
+import { Layout, getThemedContent } from '@aalhaddad/core-components';
+import { en } from '@aalhaddad/i18n';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { Fragment } from 'react';

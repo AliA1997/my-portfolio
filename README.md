@@ -4,7 +4,7 @@
   <a href="http://sal-anvarov.com/" target="blank"><img src="./apps/personal-portfolio/public/assets/thumbnails/website.png" width="320" alt="portfolio website" /></a>
 </p>
 
-<p align="center">A modern <a href="https://www.nextjs.org" target="blank" rel="noreferrer noopener">Next.js</a> portfolio website built with 💙 and ☕ by Sal Anvarov. <a href="https://www.sal-anvarov.com" target="blank" rel="noreferrer noopener">Deployed</a> with <a href="https://www.hotjar.com/" target="blank" rel="noreferrer noopener">HotJar</a>, <a href="https://tagmanager.google.com/#/home" target="blank" rel="noreferrer noopener">GTM</a>, and <a href="https://formspree.io/" target="blank" rel="noreferrer noopener">Formspree</a> tools for analytics and form tracking.
+<p align="center">A modern <a href="https://www.nextjs.org" target="blank" rel="noreferrer noopener">Next.js</a> portfolio website built with 💙 and ☕ by Ali Alhaddad. <a href="https://www.sal-anvarov.com" target="blank" rel="noreferrer noopener">Deployed</a> with <a href="https://www.hotjar.com/" target="blank" rel="noreferrer noopener">HotJar</a>, <a href="https://tagmanager.google.com/#/home" target="blank" rel="noreferrer noopener">GTM</a>, and <a href="https://formspree.io/" target="blank" rel="noreferrer noopener">Formspree</a> tools for analytics and form tracking.
 </p>
 
 Table of Contents:
@@ -201,4 +201,4 @@ PRs are appreciated, I fully rely on the passion ❤️ of the OS developers.
 
 This personal portfolio website is [MIT licensed](LICENSE).
 
-[Author](https://linkedin.com/in/sal-anvarov)
+[Author](https://www.linkedin.com/in/ali-alhaddad/)

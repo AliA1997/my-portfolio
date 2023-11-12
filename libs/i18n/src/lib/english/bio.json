@@ -1,9 +1,9 @@
 {
   "bio": {
-    "media": "/assets/3d-headshot-lg.png",
+    "media": "/assets/3d-headshot.png",
     "details": {
       "heading": "Bio",
-      "name": "Sal Anvarov",
+      "name": "Ali Alhaddad",
       "description": "Hard-working developer with a flair for creating elegant solutions to complex problems. Team player with a can-do attitude and a strong focus on client satisfaction. Diverse experience with modern technologies and cloud providers like AWS and GCP with enterprise DevOps experience. Likes to contribute to open-source and create apps on his free time."
     }
   },
@@ -11,19 +11,34 @@
     "heading": "Experience",
     "experience": [
       {
-        "date": "2022 - Present",
-        "title": "Lead Full Stack Developer",
-        "company": "Oproma"
+        "date": "March 2021 - Present",
+        "title": "Full Stack Engineer",
+        "company": "Ensurem",
+        "isPartTime": false
       },
       {
-        "date": "2022 - Present",
+        "date": "June 2021 - October 2023",
+        "title": "Chief Executive Officer",
+        "company": "Qamar Labs",
+        "isPartTime": true
+      },
+      {
+        "date": "February 2023 - July 2023",
         "title": "Chief Technology Officer",
-        "company": "Cleanlist.ai"
+        "company": "NoogaNaega",
+        "isPartTime": true
       },
       {
-        "date": "2020 - 2022",
-        "title": "Lead Software Developer",
-        "company": "Permion.ai"
+        "date": "June 2022 - January 2023",
+        "title": "Founding Software Engineer",
+        "company": "Metafire Financial",
+        "isPartTime": true
+      },
+      {
+        "date": "October 2018 - March 2021",
+        "title": "Software Engineer",
+        "company": "Kikoda Software Consulting",
+        "isPartTime": false
       }
     ]
   },
@@ -31,19 +46,19 @@
     "heading": "Education",
     "education": [
       {
-        "date": "Professional Certificate",
-        "degree": "Meta Front-End Developer",
-        "university": "Coursera"
+        "date": "2021-2023",
+        "degree": "Multiple Certificates in Docker, UI/UX, and AWS Infrastructure",
+        "university": "Udemy"
       },
       {
-        "date": "Professional Certificate",
-        "degree": "Meta Back-End Developer",
-        "university": "Coursera"
+        "date": "March 2018 - July 2018",
+        "degree": "Web Development Badge",
+        "university": "DevMountain"
       },
       {
-        "date": "Degree",
-        "degree": "Bachelor Degree in CS and Stats",
-        "university": "University of Toronto"
+        "date": "April 2016 - May 2017",
+        "degree": "Incompleted Computer Science Associate Degree",
+        "university": "Modesto Junior College"
       }
     ]
   },
@@ -60,11 +75,11 @@
     },
     "profiles": [
       {
-        "link": "https://github.com/msanvarov",
+        "link": "https://github.com/AliA1997",
         "icon": "iconoir-github"
       },
       {
-        "link": "https://linkedin.com/in/sal-anvarov",
+        "link": "https://www.linkedin.com/in/ali-alhaddad/",
         "icon": "iconoir-linkedin"
       }
     ]
@@ -82,7 +97,7 @@
   },
   "credentials": {
     "heading": "Credentials",
-    "caption": "A little on Sal",
+    "caption": "A little on Ali",
     "media": "/assets/signature.png",
     "button": {
       "link": "/credentials",
