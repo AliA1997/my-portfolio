@@ -6,7 +6,7 @@ export enum LanguageEnum {
 export enum ThemeModeEnum {
   LIGHT = 'light',
   DARK = 'dark',
-}
+}``
 
 export interface ILayoutState {
   readonly language: LanguageEnum;
