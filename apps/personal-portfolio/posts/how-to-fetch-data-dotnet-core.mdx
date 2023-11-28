@@ -1,118 +1,307 @@
 ---
 title: 'How to Fetch Data in C# .NET Core'
 uid: how-to-fetch-data-dotnet-core
-thumbnail: /assets/thumbnails/pytorch-hooks.png
+thumbnail: https://miro.medium.com/v2/resize:fit:828/format:webp/0*NTpz-aeH4otUfgzC
 category: Backend Development
 tag: .NET Core
 description: We are fetching data from pokeapi to illustrate how we would perform asynchronous operations in c#.
 publish_date: 10/06/2018
 ---
 
-In the realm of deep learning, debugging models can pose significant challenges. Issues such as tensor shape inconsistencies, gradient explosion, and various other anomalies can arise unexpectedly. Conventional debugging methods often involve cluttering the forward() functions with print statements or embedding breakpoints. While these approaches are straightforward, they are not particularly efficient as they involve a degree of conjecture and can be labor-intensive.
+But before anything we will setup our environment using visual studio here is a quick guide.
 
-A more refined approach exists in the form of hooks. Hooks are specialized functions that can be affixed to each layer within the neural network. They are invoked every time a specific layer is activated, offering a mechanism to temporarily halt and examine the forward or backward pass, allowing for an in-depth inspection of inputs and outputs.
+Feel free to [look at this tutorial](https://www.twilio.com/docs/usage/tutorials/how-to-set-up-your-csharp-and-asp-net-mvc-development-environment?source=post_page-----ea1ab720e3f9--------------------------------).
 
-## A Comprehensive Introduction to Hooks
+---
 
-A hook is a callable entity conforming to a specific signature that can be registered with any `nn.Module` object in PyTorch. Upon invoking the trigger method (i.e., `forward()` or `backward()`), the module, along with its inputs and possible outputs, is passed to the hook. This occurs before the computation proceeds to the subsequent module.
+Great we will now create our solution, which will have a name of PokeApp, and a project which will be a Console app named PokeApi.
 
-In PyTorch, hooks can be classified into three categories:
+![Image Link](https://miro.medium.com/v2/resize:fit:828/format:webp/1*h0c9IwggQIteGcf2942TIw.png)
 
-- Forward Pre-Hook: Executes prior to the forward pass.
-- Forward Hook: Executes subsequent to the forward pass.
-- Backward Hook: Executes following the backward pass.
+Now we will have a Program.cs which will be our main program file. Now we will have another file called PokeItem.cs which would be the structure of each PokeItem in our list.
 
-While the concept may initially seem intricate, it becomes clearer when illustrated with a practical example.
+![Image Link](https://miro.medium.com/v2/resize:fit:640/format:webp/1*4GUZX3eOeDvW3HtXhRF-vw.png)
 
-## A Practical Use-Case: Examining Outputs of Convolutional Layers
+Now add your Nuget packages needed for your project. Add Newtonsoft which is the most popular nuget package. Used for parsing json to c# objects. By right clicking dependencies, and manage nuget packages.
+It should look like this, after adding it.
 
-For instance, if one wishes to scrutinize the outputs of each convolutional layer in a ResNet34 architecture, hooks are highly suited for this task. The forthcoming section will demonstrate this procedure. For an interactive experience, [the corresponding Jupyter notebook can be accessed here](https://github.com/cosmic-cortex/pytorch-hooks-tutorial).
+![Image Link](https://miro.medium.com/v2/resize:fit:640/format:webp/1*1CvzvSUGAnM1iJHsAgxwxA.png)
 
-The model is initialized as follows:
+Now let’s start doing some code.
 
-```python
-import torch
-from torchvision.models import resnet34
+---
+We will first define our PokeItem.cs file which would be used when we do a api call to just retrieve one pokemon. It is a very basic class with one property, and a constructor method, with the constructor setting it’s name property based on name argument.
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
 
-device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-
-model = resnet34(pretrained=True)
-model = model.to(device)
+//Define your PokeItem model which will have a Name, and a Url.
+namespace PokemonApp
+{
+    //Make your class public, since by default it is internal.
+    public class PokeItem
+    {
+        //Define the constructor of your PokeItem which is the same name as class, and is not returning anything.
+        //Will take a string name, and url as a argument.
+        public PokeItem(string name, string url)
+        {
+            Name = name;
+        }
+        //Your Properties are auto-implemented.
+        public string Name { get; set; }
+    }
+}
 ```
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/d9af283818210c038d26e9e5f824ae91/raw/e6e4d67890628fba8592c8b220731626b2951342/PokeItem.cs) if you would like to look at the code.
 
-Implementing a hook to preserve the outputs is straightforward. A simple callable object suffices for our requirements.
-
-```python
-class SaveOutput:
- def __init__(self):
- self.outputs = []
-
- def __call__(self, module, module_in, module_out):
- self.outputs.append(module_out)
-
- def clear(self):
- self.outputs = []
+Now we will go to our Program.cs file, where we will have a Newtonsoft.Json directive for converting data retrieved data from api to c# objects, and System.Net.Http to use your HttpClient which is the base client for retrieving a response using a uri.
+```csharp
+//Using System.Net.Http directive which will enable HttpClient.
+using System.Net.Http;
+//use newtonsoft to convert json to c# objects.
+using Newtonsoft.Json.Linq;
 ```
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/088cf5d98bdd8815fd9c4befd817991d/raw/b617e4d589baee05059cbcbc3ea7c62a27b4a197/Program.cs) if you would like to look at the code.
 
-An instance of SaveOutput will capture the tensor output from the forward pass and accumulate it in a list.
+Now we will define a static asynchronous method that will return nothing, but instead logs into a console.
 
-Hooks can be registered to each convolutional layer using the register_forward_hook method. (For other types of hooks, methods like register_backward_hook and register_forward_pre_hook are available.) The return value of these methods provides a hook handle, facilitating the hook's removal when necessary.
+Our using directive will be in a try/catch block.
 
-To register the hook across all convolutional layers, the following code is employed:
+We will then define our baseUrl within our method which will be the uri that our HttpClient will be connected to.
 
-```python
-save_output = SaveOutput()
+Then we will have a nested using directive, since it implements the IDisposable interface which has a garbage collector that will collect a object if unused.
 
-hook_handles = []
+We will have three using directives.
 
-for layer in model.modules():
- if isinstance(layer, torch.nn.modules.conv.Conv2d):
- handle = layer.register_forward_hook(save_output)
- hook_handles.append(handle)
+The first using directive we will have our HttpClient defined, which will assigned to client. If a exception is caught log it to console.
+
+This will be in the Program.cs file.
+```csharp
+//Now define your asynchronous method which will retrieve all your pokemon.
+public static async void GetPokemon()
+{
+    //Define your baseUrl
+    string baseUrl = "http://pokeapi.co/api/v2/pokemon/";
+    //Have your using statements within a try/catch blokc that will catch any exceptions.
+    try
+    {
+        //We will now define your HttpClient with your first using statement which will use a IDisposable.
+        using (HttpClient client = new HttpClient())
+        {
+            
+        }
+    } catch(Exception exception)
+    {
+        Console.WriteLine("Exception Hit------------");
+        Console.WriteLine(exception);
+    }
+}
 ```
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/d9a7e0a37d0125d7e3e7d8ab5317b608/raw/6e867e12a3b83a8ca041728de8de37657b3a7555/Program.cs) if you would like to look at the code.
 
-By incorporating hooks in your deep learning workflow, you can obtain a more granular level of control over model debugging, thus enhancing the efficiency and effectiveness of your development process.
+Now define your response which will be retrieving from the HttpClient response which would be HttpResponseMessage, which would return a message with status code and data from response. 
+For this operation we would use the await keyword for our get request(since it is asynchronous). Which will also nest another using directive which would retrieve the content from the response, by assigning to a variable from the response Content property containing your data.
 
-## Conducting the Experiment: Analyzing Intermediate Layer Outputs
-
-Once the hook is successfully registered, it is invoked after the forward pass of each convolutional layer. To evaluate its effectiveness, we will use a sample image.
-
-![Sample Image by Manja Vitolic on Unsplash](/assets/thumbnails/pytorch-cat.jpeg)
-
-### Executing the Forward Pass
-
-The following Python code utilizes the PIL library for image manipulation and torchvision for data transformation.
-
-```python
-from PIL import Image
-from torchvision import transforms as T
-
-image = Image.open('cat.jpg')
-transform = T.Compose([T.Resize((224, 224)), T.ToTensor()])
-X = transform(image).unsqueeze(dim=0).to(device)
-
-out = model(X)
+```csharp
+//Now define your asynchronous method which will retrieve all your pokemon.
+public static async void GetPokemon()
+{
+    //Define your baseUrl
+    string baseUrl = "http://pokeapi.co/api/v2/pokemon/";
+    //Have your using statements within a try/catch block
+    try
+    {
+        //We will now define your HttpClient with your first using statement which will use a IDisposable.
+        using (HttpClient client = new HttpClient())
+        {
+            //In the next using statement you will initiate the Get Request, use the await keyword so it will execute the using statement in order.
+            //The HttpResponseMessage which contains status code, and data from response.
+            using (HttpResponseMessage res = await client.GetAsync(baseUrl))
+            {
+                //Then get the data or content from the response in the next using statement, then within it you will get the data, and convert it to a c# object.
+                using (HttpContent content = res.Content)
+                {
+                    
+                }
+            }
+        }
+    } catch(Exception exception)
+    {
+        Console.WriteLine("Exception Hit------------");
+        Console.WriteLine(exception);
+    }
+}
 ```
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/ebfb6f3cd208c9629e5f7bdd16387a40/raw/76d4586a8c4295216b8460a920cf606d3a4d7256/Program.cs) if you would like to look at the code.
 
-As anticipated, the hook function successfully captured and stored the outputs.
 
-```python
->>> len(save_output.outputs)
-36
+Now we will just assign a data variable to the content variable in our using directive which will be converted into a string by using the ReadAsStringAsync method, which you would use the await keyword since this operation is asynchronous also. 
+Now just log it to the console if it has data else log the console that it doesn’t have data.
+```csharp
+//Now define your asynchronous method which will retrieve all your pokemon.
+public static async void GetPokemon()
+{
+    //Define your baseUrl
+    string baseUrl = "http://pokeapi.co/api/v2/pokemon/";
+    //Have your using statements within a try/catch block
+    try
+    {
+        //We will now define your HttpClient with your first using statement which will use a IDisposable.
+        using (HttpClient client = new HttpClient())
+        {
+            //In the next using statement you will initiate the Get Request, use the await keyword so it will execute the using statement in order.
+            using (HttpResponseMessage res = await client.GetAsync(baseUrl))
+            {
+                //Then get the content from the response in the next using statement, then within it you will get the data, and convert it to a c# object.
+                using (HttpContent content = res.Content)
+                {
+                    //Now assign your content to your data variable, by converting into a string using the await keyword.
+                    var data = await content.ReadAsStringAsync();
+                    //If the data isn't null return log convert the data using newtonsoft JObject Parse class method on the data.
+                    if (data != null)
+                    {
+                        //Now log your data in the console
+                        Console.WriteLine("data------------{0}", data);
+                    }
+                    else 
+                    {
+                        Console.WriteLine("NO Data----------");
+                    }
+                }
+            }
+        }
+    } catch(Exception exception)
+    {
+        Console.WriteLine("Exception Hit------------");
+        Console.WriteLine(exception);
+    }
+}
 ```
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/6b182704b247c3580328b3f7e78b48f6/raw/4f52a12449681b52ecfc36d056d2eb655f193c57/Program.cs) if you would like to look at the code.
 
-Through the analysis of these stored tensors, we can visually assess what the neural network perceives at each layer.
+It should display this.
 
-![Visualization of 1st Layer Outputs](/assets/thumbnails/pytorch-cat-first-layer.png)
 
-Moreover, to satiate our curiosity, we can delve deeper into the network layers. As we progress, the features being learned by the network become increasingly abstract. For example, one of the filters appears to focus on eye detection.
+![Image Link](https://miro.medium.com/v2/resize:fit:828/format:webp/1*pQNK3soXWNouiKfmc847Qw.png)
 
-![Visualization of 16th Layer Outputs](/assets/thumbnails/pytorch-cat-16th-layer.png)
+Now we will parse the data to a JObject, and retrieve the results property using bracket notation.
 
-## Extending the Utility of Hooks: Advanced Applications
+```csharp
+//Now define your asynchronous method which will retrieve all your pokemon.
+public static async void GetPokemon()
+{
+    //Define your baseUrl
+    string baseUrl = "http://pokeapi.co/api/v2/pokemon/";
+    //Have your using statements within a try/catch block
+    try
+    {
+        //We will now define your HttpClient with your first using statement which will implements a IDisposable interface.
+        using (HttpClient client = new HttpClient())
+        {
+            //In the next using statement you will initiate the Get Request, use the await keyword so it will execute the using statement in order.
+            using (HttpResponseMessage res = await client.GetAsync(baseUrl))
+            {
+                //Then get the content from the response in the next using statement, then within it you will get the data, and convert it to a c# object.
+                using (HttpContent content = res.Content)
+                {
+                    //Now assign your content to your data variable, by converting into a string using the await keyword.
+                    var data = await content.ReadAsStringAsync();
+                    //If the data isn't null return log convert the data using newtonsoft JObject Parse class method on the data.
+                    if (content != null)
+                    {
+                        //Now log your data object in the console
+                        Console.WriteLine("data------------{0}", JObject.Parse(data)["results"]);
+                    }
+                    else
+                    {
+                        Console.WriteLine("NO Data----------");
+                    }
+                }
+            }
+        }
+    }
+    catch (Exception exception)
+    {
+        Console.WriteLine("Exception Hit------------");
+        Console.WriteLine(exception);
+    }
+}
+```
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/9f2207f7587ab2a92ccae4f0225f36e1/raw/79ec56f67f294db9017dc941406777df4a044486/Program.cs) if you would like to look at the code.
 
-The capabilities of hooks extend far beyond merely capturing the outputs of intermediate layers. They can also be employed in advanced techniques like neural network pruning, which aims to minimize the number of parameters without sacrificing performance.
+Now we will define your GetOnePokemon method which would be also be static, meaning it would be a class method. Asynchronous since it is performing a call to a api. Then will be void since we are just logging the result into the console. We will define the method similarly to our GetPokemon method, but it take a pokeId argument, which would be use in your url to get a specific pokemon from api.
 
-### Conclusion: The Crucial Role of Hooks in Workflow Optimization
+```csharp
+//Define your static method which will make the method become part of the class
+//Also make it asynchronous meaning it is retrieving data from a api.
+//Have it void since your are logging the result into the console.
+//Which would take a integar as a argument.
+public static async void GetOnePokemon(int pokeId)
+{
+    //Define your base url
+    string baseURL = $"http://pokeapi.co/api/v2/pokemon/{pokeId}/";
+    //Have your api call in try/catch block.
+    try { 
+        //Now we will have our using directives which would have a HttpClient 
+        using (HttpClient client = new HttpClient())
+        {
+            //Now get your response from the client from get request to baseurl.
+            //Use the await keyword since the get request is asynchronous, and want it run before next asychronous operation.
+            using (HttpResponseMessage res = await client.GetAsync(baseURL))
+            {
+                //Now we will retrieve content from our response, which would be HttpContent, retrieve from the response Content property.
+                using (HttpContent content = res.Content)
+                {
+                    //Retrieve the data from the content of the response, have the await keyword since it is asynchronous.
+                    string data = await content.ReadAsStringAsync();
+                    //If the data is not null, parse the data to a C# object, then create a new instance of PokeItem.
+                    if (data != null)
+                    {
+                        //Parse your data into a object.
+                        var dataObj = JObject.Parse(data);
+                        //Then create a new instance of PokeItem, and string interpolate your name property to your JSON object.
+                        //Which will convert it to a string, since each property value is a instance of JToken.
+                        PokeItem pokeItem = new PokeItem(name: $"{dataObj["name"]}");
+                        //Log your pokeItem's name to the Console.
+                        Console.WriteLine("Pokemon Name: {0}", pokeItem.Name);
+                    }
+                    else
+                    {
+                        //If data is null log it into console.
+                        Console.WriteLine("Data is null!");
+                    }
+                }
+            }
+        }
+        //Catch any exceptions and log it into the console.
+    } catch(Exception exception) {
+        Console.WriteLine(exception);
+    }
+}
+```
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/b4b3e1066dd9f31a78554438ab5d61bd/raw/f96783e2f907b084b399d559ada126932cd8ffcb/Program.cs) if you would like to look at the code.
 
-In conclusion, the incorporation of hooks in your development process can prove invaluable for enhancing both the efficiency and capabilities of your neural network models. Equipped with this powerful tool, you are poised to tackle more complex challenges in a more effective manner.
+The only other difference is that we are parsing our data to a JObject, then parsing our JObject name property which is a JToken using string interpolation. To our name parameter of our PokeItem constructor to create a new instance of our PokeItem class. Then we will log our pokeItem name to console.
+
+Our console should look like this.
+
+![Image Link](https://miro.medium.com/v2/resize:fit:828/format:webp/1*GPzLbj_maEBEiahD-S0HKg.png)
+
+---
+Congratulations your just fetched data using c#.
+
+Here is my github repository for reference.
+Feel free to [look gist](https://github.com/AliA1997/Pokemon-App-CSharp) if you would like to look at the code.
+Follow me on instagram and linkedin.
+
+Instagram:
+
+https://www.instagram.com/alooshie_97/
+
+Linkedin:
+
+https://www.linkedin.com/in/ali-alhaddad/
+
+Happy Coding!
+

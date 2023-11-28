@@ -1,29 +1,151 @@
 ---
 title: Access Modifiers in C#
 uid: access-modifiers-in-csharp
-thumbnail: /assets/thumbnails/website.png
+thumbnail: https://miro.medium.com/v2/resize:fit:828/format:webp/0*JJOqBwXRnx4qO_Y0
 category: Backend Development
 tag: C#
 description: We will explain the reasons for access modifiers in c#.
 publish_date: 10/06/2018
 ---
+What are Access Modifiers?
 
-The template was built to act as backbone for this website, while giving-back to the community.
+There are levels of access you can specify for specific constructs. 
+The only ones that you can’t be have a access modifier is based on their accessibility domain. 
+How you would know their accessibility level would be based on the member accessibility level, and containing type accessibility level. 
+Never can the nested type have more access than the type itself.
 
-A beautiful, minimal and user-friendly portfolio template for developers, which is completely free for consumption. This template is built using Next.js and Bootstrap v5.
+---
 
-Give it a star 🌟 on Github if you find it useful.
+Let's do a little coding.
 
-> GitHub: [Repo Link](https://github.com/msanvarov/personal-portfolio)
+We will have all our properties in our PublicClass.cs file. It will contain 5 properties all varying in access levels.
 
-## Features
+A private Name1 property which would have the least amount of access, only can be accessed within the class.
 
-- Clean, elegant and modern ui design 💄.
-- Built with Next.js 🔨.
-- Light and Dark mode compatibility.
-- Well organized documentation.
-- Built with a11y in mind ♿.
-- Fully responsive.
-- Animated for page-transitions and browsing.
-- Optimized for web crawlers.
-- Loads fast ⚡.
+A protected Name2 property which would have the second least amount of access, only can be accessed from a derived class.
+
+A internal Name3 property which would have the third least amount of access, only can be accessed within it’s current assembly or namespace.
+
+A public Name4 property which would have the most amount of access, it can be access through out the application.
+
+Then a protected internal Name5 property which we would combine two access modifiers. It can be accessed in the current assembly or namespace, and can be access in a derived class.
+
+We would define all these properties within our constructor which take the corresponding properties lowercase as arguments, all would be strings. Then we would assign those argument to our properties.
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace AccessModifiersTutorial
+{
+    class PublicClass
+    {
+        //Define constructor method
+        public PublicClass(string name1, string name2, string name3, string name4, string name5)
+        {
+            Name1 = name1;
+            Name2 = name2;
+            Name3 = name3;
+            Name4 = name4;
+            Name5 = name5;
+        }
+        //Define your members of your class here.
+        //Private is the access level that provides the least accesss, only you can accesss the value within the class.
+        private string Name1 { get; set; }
+        //Protected is the access level that provides the second least access
+        //only you can access the value within a class or a inherited class.
+        protected string Name2 { get; set; }
+        //internal means it can be accessed in it's current assembly/namespace
+        //BUT NOT in a inherited assembly/namespace.
+        internal string Name3 { get; set; }
+        //public means it can be accessed throughout the application
+        //It has the most access. 
+        public string Name4 { get; set; }
+        //Can combine multiple access modifiers.
+        //You can combine protected and internal, so it can be accessed in a class and a derived class
+        //and the same assembly/namespace.
+        protected internal string Name5 { get; set; }
+        //You can also combine protected and private, so it can be accessed in it's class and a derived class.
+        //But it is fairly new to c#, so the minimum version would be 7.2
+        //private protected string Name6 { get; set; } 
+    }
+}
+```
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/95c5b2adfb6d07c7f7a5f6fbfa59b876/raw/083b48ce32ca31ca57cdab34456e222eacb9dd49/PublicClass.cs) if you would like to look at the code.
+
+Now in your Program.cs file within you Main method, create a new instance of your PublicClass, and assign it to a variable called exampleClass.
+```csharp
+//Define your instance of your class.
+PublicClass exampleClass = new PublicClass(name1: "Name 1", name2: "Name 2", name3: "Name 3", name4: "Name 4", name5: "Name 5"); 
+```
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/b618c1f8e17bfe6909699e809c42dbf6/raw/f89985a8c18b7244d86b8973a25808e07ea94836/Program.cs) if you would like to look at the code.
+
+The private access modifier will give your member of your class or variable the least amount of access. 
+When your try it to log into the console it will give you an error. 
+You would use the private access modifier when implementing logic for your getter’s and setters, by assigning it to a variable and manipulating that variable within your setter, and returning it in your getter.
+
+```csharp
+/Log your private property to console.
+//It will give your error, it can only be accessed within the class.
+Console.WriteLine(exampleClass.Name1);
+```
+Log private property into the console.
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/1f39809a60a51905160987835638e303/raw/d9262b17bb58af91fb871d4466f8e369bd4c81ac/Program.cs) if you would like to look at the code.
+
+The protected access modifier it will give your member of your class or variable the second least amount of access. 
+It can only be accessed from a derived class or a inherited class. 
+When your try to log into the console, it will give you a error.
+```csharp
+//Log your protected property to the console.
+//It will give you a error, it can only be accessed within class or another class inherited.
+Console.WriteLine(exampleClass.Name2);
+```
+Log protected property into the console.
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/b07236be170081067e3ef849f976d4fc/raw/f2d91d4930f09a01ccfda5252384d5a83fba82e4/Program.cs) if you would like to look at the code.
+
+The internal access modifier will give your member of your class or variable that third least amount of access. 
+It can be only accessed from the same namespace.
+When your try to log into the console, it will log it successfully, because the PublicClass is in the same namespace. 
+Used in component based development, primarily as a static value.
+```csharp
+//Log your internal property which would log into the console, since it is in the same assembly/namespace.
+Console.WriteLine(exampleClass.Name3);
+```
+Log internal property into the console.
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/eaf4f44994a1148f2bef7d45aa658218/raw/2bf99b53131f2f122e04716d7d05394a67709e37/Program.cs) if you would like to look at the code.
+
+The public access modifier gives your member, and property the most access. Therefore can be accessed throughout your application.
+```csharp
+//Log your public property which would be logged into the console.
+//Since it can be accessed throughout the application.
+Console.WriteLine(exampleClass.Name4);
+```
+Log public property into the console.
+Feel free to [look at github gist](https://gist.githubusercontent.com/AliA1997/bbc141ce3f4a4ab11de892850b2f8f06/raw/59ccbecf3bc63166ec28c4e6088a4771bfa4159c/Program.cs) if you would like to look at the code.
+
+You can also combine access modifiers, for example you can have your protected and internal access modifier combined. 
+Which means it can be accessed within the class or the class inherited or the namespace. When you log into the console, it would work.
+```csharp
+//Can combine multiple access modifiers.
+//You can combine protected and internal, so it can be accessed in a class and a derived class
+//and the same assembly/namespace.
+Console.WriteLine(exampleClass.Name5);
+```
+Log your protected and internal property into the console.
+
+Well those are a couple of examples.
+
+Here is my github repo for reference.
+Feel free to [look at my code](https://github.com/AliA1997/C-Access-Modifiers?source=post_page-----d2f1941604dc--------------------------------) if you would like to look at the code.
+
+Follow me on instagram and linkedin.
+
+Instagram:
+
+https://www.instagram.com/alooshie_97/
+
+Linkedin:
+
+https://www.linkedin.com/in/ali-alhaddad/
+
+Happy Coding!
