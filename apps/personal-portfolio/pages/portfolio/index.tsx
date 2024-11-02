@@ -63,9 +63,6 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
                       <div className="project-info">
                         <p>{study.metadata.category}</p>
                         <h1>{study.metadata.title}</h1>
-                        <Moment format="L - h:mm a">
-                          {study.metadata.modified}
-                        </Moment>
                       </div>
                       <Link
                         as={`/portfolio/${study.filePath.replace(
@@ -146,9 +143,6 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
                         <div className="project-info">
                           <p>{study.metadata.category}</p>
                           <h1>{study.metadata.title}</h1>
-                          <Moment format="L - h:mm a">
-                            {study.metadata.created}
-                          </Moment>
                         </div>
                         <Link
                           as={`/portfolio/${study.filePath.replace(

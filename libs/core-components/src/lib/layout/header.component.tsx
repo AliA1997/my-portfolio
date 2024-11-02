@@ -45,7 +45,7 @@ export const Header = () => {
             </ul>
             <a
               className="theme-btn"
-              href="https://calendly.com/ali-qamar-labs/30min"
+              href="https://calendly.com/devmtnali/30min"
               target="_blank"
               rel="noreferrer noopener"
             >

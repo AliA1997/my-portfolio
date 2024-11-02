@@ -11,14 +11,20 @@
     "heading": "Experience",
     "experience": [
       {
-        "date": "March 2021 - Present",
+        "date": "August 2024 - Present",
+        "title": "Full Stack Engineer",
+        "company": "Dowell Systems Inc",
+        "isPartTime": false
+      },
+      {
+        "date": "March 2021 - February 2024",
         "title": "Full Stack Engineer",
         "company": "Ensurem",
         "isPartTime": false
       },
       {
-        "date": "June 2021 - October 2023",
-        "title": "Chief Executive Officer",
+        "date": "June 2021 - August 2024",
+        "title": "Principal Software Engineer",
         "company": "Qamar Labs",
         "isPartTime": true
       },
@@ -46,6 +52,11 @@
     "heading": "Education",
     "education": [
       {
+        "date": "July 2024 - August 2027",
+        "degree": "Bachelor's Degree in Cybersecurity",
+        "university": "Western Governor's University"
+      },
+      {
         "date": "2021-2023",
         "degree": "Multiple Certificates in Docker, UI/UX, and AWS Infrastructure",
         "university": "Udemy"
@@ -54,11 +65,6 @@
         "date": "March 2018 - July 2018",
         "degree": "Web Development Badge",
         "university": "DevMountain"
-      },
-      {
-        "date": "April 2016 - May 2017",
-        "degree": "Incompleted Computer Science Associate Degree",
-        "university": "Modesto Junior College"
       }
     ]
   },

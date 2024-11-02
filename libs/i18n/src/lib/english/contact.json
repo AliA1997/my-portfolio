@@ -4,7 +4,7 @@
     "mail": {
       "heading": "MAIL",
       "icon": "iconoir-mail",
-      "links": ["ali@qamarlabs.com", "devmtnali@gmail.com"]
+      "links": ["ali@autotalk.net", "devmtnali@gmail.com"]
     },
     "phone": {
       "heading": "CONTACT",
@@ -12,7 +12,7 @@
       "links": [
         {
           "text": "Calendly",
-          "href": "https://calendly.com/ali-qamar-labs/30min"
+          "href": "https://calendly.com/devmtnali/30min"
         }
       ]
     },

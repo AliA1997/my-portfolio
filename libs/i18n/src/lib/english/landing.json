@@ -3,7 +3,7 @@
     "heading": "Ali Alhaddad.",
     "caption": "Full Stack Engineer",
     "description": "A skilled full-stack engineer in React and C# implementing microservices architecture, managing private npm packages, and excelling in SQL Server to MySQL conversion, UI design, and Next.js integration.",
-    "descriptionExtended": "Currently contributing to the design and development efforts at <span class='text-primary-color'>Ensurem</span>.",
+    "descriptionExtended": "Currently contributing to the design and development efforts at <span class='text-primary-color'>Dowell Systems Inc.</span>.",
     "location": "📍 Based in Tampa.",
     "media": "/assets/3d-headshot.png",
     "button": {
@@ -92,15 +92,15 @@
   "facts": {
     "quickFacts": [
       {
-        "count": "5+",
+        "count": "6+",
         "label": "YEARS <br /> EXPERIENCE"
       },
       {
-        "count": "2+",
+        "count": "4+",
         "label": "CONSULTATIONS <br /> CONDUCTED"
       },
       {
-        "count": "7+",
+        "count": "8+",
         "label": "PRODUCTION <br /> APPLICATIONS"
       }
     ]
