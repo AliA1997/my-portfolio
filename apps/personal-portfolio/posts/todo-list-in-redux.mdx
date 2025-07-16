@@ -1,0 +1,264 @@
+---
+title: Todo-List with Redux
+uid: todo-list-in-redux
+thumbnail: data:image/png;base64,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
+category: Frontend Development
+tag: React, Redux
+description: Introduction to Redux in React 16
+publish_date: 05/23/2018
+---
+We will create a todo-list with redux.
+---
+
+Go to terminal, and go to directory to store your app in and type npx create-react-app my-app, and create a redux folder inside the src folder.
+```powershell
+touch .babelrc webpack.config.js
+```
+
+If you feel like you don’t understand redux look at me past article describing the difference between passing state from parent component to child component, 
+and passing state within the store so any component that is child of the root component can access it.
+[Take a look](https://alialhaddad.medium.com/https-medium-com-alialhaddad-redux-vs-parent-to-child-2583c8e29509)
+
+
+Now let’s open the file with our text editor, I will be using atom, but any text editor will do. 
+Get out of our src folder, and go to root of app and install react-redux and redux via yarn or npm install.
+```powershell
+cd ..
+yarn add react-redux redux OR npm i --save react-redux redux
+atom .
+```
+
+Now let’s create our reducer in our reducer.js file. 
+We will define our initial state, action types and our reducer that takes a state, and action.
+```powershell
+//This is our initial state with our list with dummy data. 
+const initialState = {
+  list: [ 'apples', 'bananas', 'oranges', 'pears' ]
+};
+```
+
+This is our reducer using es6 syntax.
+```javascript
+const reducer = (state=initialState, action) => {
+  let copyList = [];
+  switch(action.type) {
+    case ADD_TO_LIST:
+    //Remember when altering data in redux, make sure to treat data as immutable,
+    //Not changing existing data, instead assigning new data.
+    //Assign a copy of the array created via .slice() method.
+    copyList = state.list.slice();
+    // //Add another element to the array.
+    copyList.push(action.payload);
+    //Best to use console.logs to understand what your application is doing.
+    console.log('------------copyofList', copyList);
+    //Use spread operator with an object to assign a new array to array list property in state.
+    return {...state, list: copyList};
+    //
+    case REMOVE_FROM_LIST:
+    // //Copy the array
+    copyList = state.list.slice();
+    // //Removes last element of the array.
+    copyList.pop();
+    //Then return the state, with the list property assigned to a new array.
+    return {...state, list: copyList};
+    //Make sure in your default case to return the state, if not it will return undefined.
+    default:
+    return state;
+  }
+}
+```
+
+Now let’s define our action creators using es6 syntax, but can use es5 it wont make a difference since we are just exporting a function.
+Here we are creating action creators
+
+```javascript
+//This the action creator that adds a new item to the list.
+export function addToList(payload) {
+  //Return the type of action is required, and optionally return a payload in which the reducer takes and manipulates the data. 
+  return {
+    type: ADD_TO_LIST,
+    payload
+  };
+}
+//This action creator returns a action type to remove last item of the list.
+export function removeFromList() {
+  return {
+    type: REMOVE_FROM_LIST
+  };
+}
+```
+
+Now lets create our store using the createStore function from redux. 
+First we will need to import it, and the reducer, then export the store to be used for the provider.
+
+```javascript
+import { createStore } from redux;
+import reducer from './listReducers';
+```
+Can export just createStore with reducer and redux devtools or assign it to a variable.
+
+```javascript
+const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+console.log('----------------store', store);
+export default store;
+```
+
+OR
+
+```javascript
+export default createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+```
+
+Now let’s connect it with our components. 
+Let’s use Provider hoc(higher order component) that wraps our root component with the store or connects it to the store.
+Make sure to import the Provider from react-redux and the store from your store.js file.
+
+```javascript
+import { Provider } from 'react-redux';
+import store from './redux/store';
+```
+
+Now lets wrap our root component with the Provider component.
+
+```javascript
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
+```
+
+Now lets create a components Folder and create a TodoList.js file with our todo list.
+
+```powershell
+mkdir components
+cd components
+touch TodoList.js
+```
+
+This component will be a class. Import the connect from react-redux to connect component to store.
+```javascript
+import { connect } from 'react-redux'
+```
+Then define your es6 TodoList class
+```javascript
+//Don't forget to import React
+import React, {Component} from 'react';
+import { connect } from 'react-redux';
+class TodoList extends Component {
+  constructor() {
+    super();
+    this.state = {
+      text: ''
+    }
+  }
+  render() {
+    return (
+      <div>
+        <ul class='unordered-list'>
+          {this.props.list.map((item, i) => <li key={i}>{item}</li>)}
+        </ul>
+      </div>
+    );
+  }
+}
+```
+
+Now we are rendering the list. 
+Next we will map the state needed from our initialState in our reducer.js file to the component.
+
+```javascript
+const mapStateToProps = state => {
+  return state;
+}
+```
+
+Next connect the component to redux
+```javascript
+export default connect(mapStateToProps)(TodoList);
+```
+
+Since we are done with our child component now we will start structuring our root component or our App component.
+
+First import React, and Component named export, and then import the action creators that will add and remove items in the list.
+```javascript
+import React, {Component} from 'react';
+import { addToList, removeFromList } from './redux/reducers/listReducer';
+```
+
+Next import connect a named export to connect the component to react-redux.
+```javascript
+import { connect } from 'react-redux';
+```
+Then import the TodoList component that we created earlier.
+```javascript
+import TodoList from ‘./components/TodoList’;
+```
+One of the only cases when I would recommend having state in a application is when dealing with changes in input, 
+because their would be a short period of time where redux has to retrieve the new value every time the input changes, 
+but when managed in the component that time is a non-factor.
+
+Now define the constructor with our input state.
+```javascript
+constructor() {
+  super();
+  this.state = {
+   text: ''
+  }
+//No need to bind since it is not being passed down.
+}
+```
+
+Next define a function that will handle the changes in the inputs triggered by keypresses.
+```javascript
+//Handles input changes.
+handleChange(val) {
+  this.setState({text: val});
+}
+```
+
+Then define the render method of the App Component.
+```javascript
+render() {
+    console.log(this.state.text);
+    console.log(‘ — — — — — — — -this.props’, this.props)
+    console.log(‘ — — — — — — — -this.props list’, this.props.list)
+    return (
+    <div className=”App”>
+        <div>
+            <TodoList />
+            <input type=’text’ value={this.state.text} onChange={e => this.handleChange(e.target.value)}/>
+            <button onClick={() => this.props.addToList(this.state.text)}>Add To List</button>
+            <button onClick={() => this.props.removeFromList()}>Remove From List</button>
+        </div>
+    </div>
+    );
+ }
+```
+
+Define the mapStateToProps and mapDispatchToProps that will map the state and dispatcher to the props of the component.
+```javascript
+//Map the state to the props.
+const mapStateToProps = state => {
+  return state;
+}
+//Map the dispatchers or action creators to props.
+const mapDispatchToProps = {
+  addToList,
+  removeFromList
+}
+```
+If you felt like this help clap, if not comment I would love answer any questions you might have. 
+For more resources use redux documentation.
+[Redux](https://redux.js.org/introduction)
+
+Also connect with the developer community, and solve issues on your own based on other developer answers, register for stack overflow.
+[Stack Overflow](https://stackoverflow.com/users/login-add?ssrc=login&source=post_page-----2bc6692d7c23---------------------------------------)
+
+Follow me on medium, instagram and linkedin.
+
+Instagram:
+
+https://www.instagram.com/alooshie_97/
+
+Linkedin:
+
+https://www.linkedin.com/in/ali-alhaddad/
+
+Happy Coding!

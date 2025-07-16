@@ -7,6 +7,7 @@ import Link from 'next/link';
 import path from 'path';
 import Moment from 'react-moment';
 import { CASE_STUDIES_PATH, caseStudiesFilePaths } from '../../utils/mdx.utils';
+import { useMemo } from 'react';
 
 export const getStaticProps: GetStaticProps<PortfolioPageProps> = () => {
   const caseStudies = caseStudiesFilePaths
@@ -37,6 +38,9 @@ type PortfolioPageProps = {
 };
 
 const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
+  const leftPaneCaseStudies = useMemo(() => caseStudies.filter(caseStudy => !caseStudy.metadata.isPersonal), [caseStudies]);
+  const middlePaneCaseStudies = useMemo(() => caseStudies.filter(caseStudy => caseStudy.metadata.isPersonal), [caseStudies]);
+
   return (
     <Layout wrapperClass="main-workspage">
       <section className="projects-area">
@@ -47,7 +51,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
           </h1>
           <div className="row">
             <div className="col-md-4">
-              {[...caseStudies.slice(0, 2), ...caseStudies.slice(5, 6), ...caseStudies.slice(6, 7)].map((study, i) => (
+              {leftPaneCaseStudies.map((study, i) => (
                 <div data-aos="zoom-in" key={i}>
                   <div className="project-item shadow-box">
                     <Link
@@ -63,6 +67,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
                       <div className="project-info">
                         <p>{study.metadata.category}</p>
                         <h1>{study.metadata.title}</h1>
+                        {!study.metadata.isPersonal && <p className="professional">Professional</p>}
                       </div>
                       <Link
                         as={`/portfolio/${study.filePath.replace(
@@ -85,7 +90,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
                 <img src="/assets/star-2.png" alt="Star" />
               </h1>
               <div className="d-flex align-items-start gap-24">
-                {caseStudies.slice(2, 3).map((study, i) => (
+                {[middlePaneCaseStudies[2]].map((study, i) => (
                   <div data-aos="zoom-in" className="flex-1" key={i}>
                     <div className="project-item shadow-box">
                       <Link
@@ -124,7 +129,7 @@ const PortfolioPage = ({ caseStudies }: PortfolioPageProps) => {
                 ))}
               </div>
               <div className="d-flex align-items-start gap-24">
-                {caseStudies.slice(3, 5).map((study, i) => (
+                {middlePaneCaseStudies.slice(0, 2).map((study, i) => (
                   <div data-aos="zoom-in" className="flex-1" key={i}>
                     <div className="project-item shadow-box">
                       <Link
