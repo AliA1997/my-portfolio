@@ -1,0 +1,95 @@
+---
+title: One Way Data Flow vs Unidirectional Data Flow
+uid: one-way-data-flow-vs-unidirectional-data-flow
+thumbnail: https://miro.medium.com/v2/resize:fit:640/format:webp/1*PBgAz9U9SrkINPo-n5glgw.gif
+category: Frontend Development
+tag: React, Redux
+description: Difference between one way data flow and unidirectional data flow
+publish_date: 05/23/2018
+---
+Explain the differences between one way data flow and unidirectional data flow
+---
+They are multiple programming patterns of structuring your react application when managing state. 
+One-way-data-flow ←- redux, and unidirectional way ← parent to child.
+
+Two basic patterns of managing state is passing state from parent components to child component, 
+and manipulating state in parent component or child components(via this.props. method passed in from parent component). 
+Can take more time for it to go through each child component, has to pass through multiple component to change state
+
+<img
+    src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*PBgAz9U9SrkINPo-n5glgw.gif"
+    alt="Bidirectional Data Flow"
+/>
+
+Problems with this pattern?
+This can be very complicated for simple applications. 
+Can be something very hard to follow when trying DRY(don’t repeat yourself) coding principles or separation of concerns. 
+State can go through multiple components without ever being in use. Can be very hard to be track of.
+
+Purpose of this being learned in the first place?
+Learning how props can be passed down from parent components to child components is important to understand because when running into issues to redux. To understand what your are doing. 
+How state is managed in unidirectional way is important when learning how to manipulate it.(typing into a text-field for example.)
+
+Redux solves these problem.
+<img
+    src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*T_Q66EkNEhca6TyrvY1xBQ.gif"
+    alt="One Way Data Flow"
+/>
+Unlike managing state in a unidirectional way, you can handle the state all in one place if wanted(not recommended.). 
+The way redux is works, is that it manages state in the store, and manipulate state via the reducer which is nothing but a simple function. 
+That takes the state of app, and action. And manipulates it.
+
+What is state and action?
+It is nothing but a simple javascript object, and is recommended to be treated as immutable, 
+which means the object when manipulated gets assign a new object. 
+Action is also object which has to have a type, and optionally have a payload, or anything you would like to name it, 
+which are dispatched via action creators which are simple functions that return a action type.
+
+What are action types?
+Action types are cases where state is manipulated in the reducer. They are dispatched via actions creators.
+
+How are they connected to application?
+```javascript
+import { Provider } from 'react-redux';
+```
+
+Import the Provider HOC (higher order component) which wraps the component in the index.js (not in public folder) based on the store props. 
+Then you connect each component with connect method which takes 2 functions mapStateToProps and mapDispatchToProps.
+```javascript
+import { connect } from 'react-redux';
+```
+What are mapStateToProps and mapDispatchToProps?
+```javascript
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+```
+It is a function that map state of store(mapStateToProps) and a object that maps action creators(mapDispatchToProps) to props of the component wrapped in the connect method. 
+You don’t have to use both, but if you only use mapDispatchToProps have set the first parameter as null.
+```javascript
+const mapStateToProps = state => {
+   return state; 
+}
+const mapDispatchToProps = {
+//Action creators
+}
+```
+
+Why learn Redux?
+You need it, and if you are planning to learn context API, you would need to also understand redux to an extent. 
+Because it works similar. It is a more simple solution in the long run when building larger applications.
+
+For more resources go to my todo-list example which is where i implement redux.
+Feel free to [look at medium tutorial](https://medium.com/@alialhaddad/todo-list-with-redux-2bc6692d7c23?source=post_page-----2583c8e29509---------------------------------------).
+For more examples check the redux documentation.
+[Redux Documentation](https://redux.js.org/basics?source=post_page-----2583c8e29509---------------------------------------).
+
+Follow me on medium, instagram and linkedin.
+
+Instagram:
+
+https://www.instagram.com/alooshie_97/
+
+Linkedin:
+
+https://www.linkedin.com/in/ali-alhaddad/
+
+Happy Coding!

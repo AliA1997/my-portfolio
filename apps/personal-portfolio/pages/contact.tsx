@@ -69,7 +69,7 @@ const ContactPage = () => {
                 <li>
                   <a
                     className="shadow-box"
-                    href="https://github.com/msanvarov"
+                    href="https://github.com/AliA1997"
                     target="_blank"
                     rel="noreferrer noopener"
                   >

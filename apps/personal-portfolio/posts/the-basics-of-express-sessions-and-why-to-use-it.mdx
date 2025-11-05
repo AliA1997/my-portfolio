@@ -1,0 +1,74 @@
+---
+title: The Basics of Express Sessions and Why To Use it.
+uid: the-basics-of-express-sessions-and-why-to-use-it
+thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpKHeRpkFrNuH5RFN8MPtYYWYQbtOrHo2cCw&s
+category: Backend Development
+tag: Node, Express
+description: How to use express sessions when managing user's for your application.
+publish_date: 05/30/2018
+---
+When managing a user’s data you would like to keep their data, so you can give each user a unique experience.
+This is one of last few concepts you would need to understand until building a full blown application.
+What do you use?
+They are 3 options express-session, client-sessions, and cookie session. 
+If they are any that I missed please comment. We will be using express-session. 
+Here is the resources for these three.
+
+[Client-Sessions](https://github.com/mozilla/node-client-sessions?source=post_page-----4acf0b0cbaf1---------------------------------------)
+[Cookie Session](https://www.npmjs.com/package/cookie-session?source=post_page-----4acf0b0cbaf1---------------------------------------)
+[Express-sessions](https://github.com/expressjs/session?source=post_page-----4acf0b0cbaf1---------------------------------------)
+
+---
+
+Look at it or go on! Sessions store user data when accessing and browsing application. Allows applications to store state. For Example if I login, how the server remembers my activity is by my session.
+What are the ways of storing user data?
+The easiest and simplest is storing in the application memory. In a form of a cookie. In memory cache. And a database store.
+
+Why store data in application memory?
+It is easiest, and is preferred for beginners to start with. 
+Data for application runtime. If server stopped or there issues with server data is lost. 
+When it comes to production it is a bad idea, because the application memory eventually runs out, there is a memory leak. 
+Therefore giving unauthorized users the ability to access user data. In production it IS NOT A GOOD IDEA.
+
+Why store data in a cookie?
+A piece of data between server and browser for a unique user. 
+Sent a period time with a expiration date. 
+Manipulate cookie if needs and sends back to browser.
+
+This is when express-sessions comes in?
+This is when express-session does work under the hood. 
+It saves and retrieves data using a cookie. 
+Cookies though are about 4KB in memory, and it would be a bad idea to store so many do to the fact it can cause bad performance, and if the encryption is found a unauthorized user can access their data.
+
+Why store data in memory cache or cache?
+Only small chunk is store in a form of a key-value pair. 
+It contains a sessionId that is a unique id for the store. 
+Removes risk of accessing data. It can be a pain to setup do to the fact you have to setup another server, might be a overkill for small applications, and there is no way of removing data unless removing all of cache. 
+Use redis or connect-memcached for this functionality.
+
+Final solution store data in a database.
+Maps the sessionId as a primary key in a database. 
+Slower because it is retrieving data via disk. 
+Look at this for the databases used with express-sessions.
+[expressjs/session](https://github.com/expressjs/session?source=post_page-----4acf0b0cbaf1---------------------------------------#compatible-session-stores)
+
+What are the best ways of storing data?
+If needed store in cookie, memory cache, and store database is all a good solution, but each one has it issues. 
+Protect user data using redis or connect-memcached, secure primary keys, and store data in database store.
+
+Look at this article for more info.
+[How do Express.js Sesssions Work?](https://nodewebapps.com/2017/06/18/how-do-nodejs-sessions-work/?source=post_page-----4acf0b0cbaf1---------------------------------------)
+and this one for another example.
+[Express Session Example from Scratch](https://appdividend.com/2018/02/05/express-session-tutorial-example-scratch/?source=post_page-----4acf0b0cbaf1---------------------------------------)
+
+Follow me on medium, instagram and linkedin.
+
+Instagram:
+
+https://www.instagram.com/alooshie_97/
+
+Linkedin:
+
+https://www.linkedin.com/in/ali-alhaddad/
+
+Happy Coding!

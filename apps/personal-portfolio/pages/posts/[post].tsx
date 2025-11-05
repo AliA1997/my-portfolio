@@ -111,7 +111,7 @@ const PostPage = ({ content, frontMatter, posts }: PostPageProps) => {
                   </Link>
                 </div>
                 <DiscussionEmbed
-                  shortname="sal-anvarov"
+                  shortname="alialhaddad"
                   config={{
                     url,
                     identifier: frontMatter.uid,

@@ -11,6 +11,12 @@
     "heading": "Experience",
     "experience": [
       {
+        "date": "June 2022 - Present",
+        "title": "Founding Software Engineer",
+        "company": "Qamar Labs",
+        "isPartTime": true
+      },
+      {
         "date": "August 2024 - May 2025",
         "title": "Full Stack Engineer",
         "company": "Dowell Systems Inc",
@@ -21,12 +27,6 @@
         "title": "Full Stack Engineer",
         "company": "Ensurem",
         "isPartTime": false
-      },
-      {
-        "date": "June 2021 - August 2024",
-        "title": "Principal Software Engineer",
-        "company": "Qamar Labs",
-        "isPartTime": true
       },
       {
         "date": "February 2023 - July 2023",
@@ -52,14 +52,9 @@
     "heading": "Education",
     "education": [
       {
-        "date": "November 2024 - August 2028",
-        "degree": "Bachelor's Degree in Computer Science",
-        "university": "Western Governor's University"
-      },
-      {
-        "date": "2021-2023",
-        "degree": "Multiple Certificates in Docker, UI/UX, and AWS Infrastructure",
-        "university": "Udemy"
+        "date": "2015-Present",
+        "degree": "Online Courses on Software Development",
+        "university": "Udemy, HuggingFace, and Other platforms"
       },
       {
         "date": "March 2018 - July 2018",

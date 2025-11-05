@@ -3,8 +3,8 @@
     "heading": "Ali Alhaddad.",
     "caption": "Full Stack Engineer",
     "description": "A skilled full-stack engineer in React and C# implementing microservices architecture, managing private npm packages, and excelling in SQL Server to MySQL conversion, UI design, and Next.js integration.",
-    "descriptionExtended": "Currently contributing to the design and development efforts at <span class='text-primary-color'>Dowell Systems Inc.</span>.",
-    "location": "📍 Based in Tampa.",
+    "descriptionExtended": "Currently leading design and development initiatives as a Founding Engineer at <span class='text-primary-color'>Qamar Labs</span>.",
+    "location": "📍 Based in St. Augustine, and Aqaba, JO.",
     "media": "/assets/3d-headshot.png",
     "button": {
       "link": "/bio",
@@ -96,7 +96,7 @@
         "label": "YEARS <br /> EXPERIENCE"
       },
       {
-        "count": "4+",
+        "count": "2+",
         "label": "CONSULTATIONS <br /> CONDUCTED"
       },
       {

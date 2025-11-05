@@ -4,7 +4,7 @@
     "mail": {
       "heading": "MAIL",
       "icon": "iconoir-mail",
-      "links": ["ali@autotalk.net", "devmtnali@gmail.com"]
+      "links": ["novigo.ali@gmail.com", "devmtnali@gmail.com"]
     },
     "phone": {
       "heading": "CONTACT",
@@ -20,7 +20,7 @@
       "heading": "LOCATION",
       "icon": "iconoir-pin-alt",
       "type": "Location",
-      "location": "Tampa, FL, USA"
+      "location": "St. Augustine, FL, USA"
     }
   },
   "profiles": {

@@ -1,10 +1,10 @@
-<h1 align="center">Sal's Personal Portfolio Website</h1>
+<h1 align="center">Ali's Personal Portfolio Website</h1>
 
 <p align="center">
-  <a href="http://sal-anvarov.com/" target="blank"><img src="./apps/personal-portfolio/public/assets/thumbnails/website.png" width="320" alt="portfolio website" /></a>
+  <a href="http://alialhaddad.com/" target="blank"><img src="./apps/personal-portfolio/public/assets/thumbnails/website.png" width="320" alt="portfolio website" /></a>
 </p>
 
-<p align="center">A modern <a href="https://www.nextjs.org" target="blank" rel="noreferrer noopener">Next.js</a> portfolio website built with 💙 and ☕ by Ali Alhaddad. <a href="https://www.sal-anvarov.com" target="blank" rel="noreferrer noopener">Deployed</a> with <a href="https://www.hotjar.com/" target="blank" rel="noreferrer noopener">HotJar</a>, <a href="https://tagmanager.google.com/#/home" target="blank" rel="noreferrer noopener">GTM</a>, and <a href="https://formspree.io/" target="blank" rel="noreferrer noopener">Formspree</a> tools for analytics and form tracking.
+<p align="center">A modern <a href="https://www.nextjs.org" target="blank" rel="noreferrer noopener">Next.js</a> portfolio website built with 💙 and ☕ by Ali Alhaddad. <a href="https://www.alialhaddad.com" target="blank" rel="noreferrer noopener">Deployed</a> with <a href="https://www.hotjar.com/" target="blank" rel="noreferrer noopener">HotJar</a>, <a href="https://tagmanager.google.com/#/home" target="blank" rel="noreferrer noopener">GTM</a>, and <a href="https://formspree.io/" target="blank" rel="noreferrer noopener">Formspree</a> tools for analytics and form tracking.
 </p>
 
 [![Deploy with Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAliA1997%2Fmy-portfolio&env=ENABLE_TRACKING,HOTJAR_WEBSITE_UID,HOTJAR_VERSION,GOOGLE_TAG_MANAGER_UID,MICROSOFT_CLARITY_UID,DEBUGBEAR_RUM_UID&envDescription=Environment%20Configs%20for%20Website&envLink=https%3A%2F%2Fgithub.com%2FAliA1997%2Fmy-portfolio%23-environment-configuration&project-name=personal-portfolio&repository-name=my-portfolio&redirect-url=https%3A%2F%2Fgithub.com%2FAliA1997%2Fmy-portfolio&demo-title=Ali%27s%20Personal%20Website&demo-url=https%3A%2F%2Falialhaddad.com/&demo-image=https%3A%2F%2Fhttps://alialhaddad.com/
@@ -23,7 +23,7 @@ Table of Contents:
 
 ### 📚 Description
 
-Preview: https://www.sal-anvarov.com/
+Preview: https://www.alialhaddad.com/
 
 This portfolio website was built with ease of extensibility in mind. This app comes with **MDX** for case-studies and blog management and **Bootstrap** for styling. The app has redux state management via **Redux Toolkit** and **React Hooks**.
 
@@ -55,7 +55,7 @@ This portfolio website was built with ease of extensibility in mind. This app co
 
 #### Manual Deployment without Docker
 
-- Clone the repo via `git clone https://github.com/msanvarov/personal-portfolio`.
+- Clone the repo via `git clone https://github.com/AliA1997/personal-portfolio`.
 
 - Navigate to the root directory of repo via `cd personal-portfolio`.
 
@@ -69,7 +69,7 @@ This portfolio website was built with ease of extensibility in mind. This app co
 
 #### Deploying with Docker 🐳
 
-[Open in Docker Dev Environments <img src="assets/open-link.svg" alt="Open in Docker Dev Environments" align="top"/>](https://open.docker.com/dashboard/dev-envs?url=https://github.com/msanvarov/personal-portfolio/tree/master)
+[Open in Docker Dev Environments <img src="assets/open-link.svg" alt="Open in Docker Dev Environments" align="top"/>](https://open.docker.com/dashboard/dev-envs?url=https://github.com/AliA1997/personal-portfolio/tree/master)
 
 - Execute the following command in-app directory:
 
@@ -187,8 +187,8 @@ $ npm run test
 
 |                                                            Branches | Status |
 | ------------------------------------------------------------------: | :----- |
-|             [main](https://github.com/msanvarov/personal-portfolio) | ✅     |
-| [feat/\*](https://github.com/msanvarov/personal-portfolio/branches) | 🚧     |
+|             [main](https://github.com/AliA1997/personal-portfolio) | ✅     |
+| [feat/\*](https://github.com/AliA1997/personal-portfolio/branches) | 🚧     |
 
 <!-- > Remark: This template was employed to create a [Real World example app](https://github.com/gothinkster/realworld) on [Github](). -->
 

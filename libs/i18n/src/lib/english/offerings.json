@@ -7,7 +7,7 @@
         "icon": "iconoir-input-output",
         "text": "System Design",
         "topics": [
-          "Architectural Planning",
+          "Architectural Planning and User Flow",
           "Data Modeling",
           "API Design and Integration",
           "Documentation and Training"
@@ -20,7 +20,7 @@
           "Web Development",
           "Mobile App Development",
           "API Development and Integration",
-          "Database Design and Management"
+          "Database Development"
         ]
       }
     ]
@@ -41,7 +41,7 @@
         "- <b>Web Development</b>: Crafting responsive and dynamic websites or web applications, using a combination of front-end and back-end technologies, to meet various online business needs.",
         "- <b>Mobile App Development</b>: Creating native and cross-platform mobile applications that offer seamless user experiences across iOS Android and other mobile platforms.",
         "- <b>API Development and Integration</b>: Building and integrating APIs to enable seamless communication between different software components, be it internal systems or third-party services.",
-        "- <b>Database Design and Management</b>: Designing efficient database schemas and offering database management services that ensure high performance, security and scalability."
+        "- <b>Database Development</b>: Designing efficient database schemas and offering database management services that ensure high performance, security and scalability."
       ]
     }
   ],
@@ -55,7 +55,7 @@
     },
     "profiles": [
       {
-        "link": "https://github.com/msanvarov",
+        "link": "https://github.com/AliA1997",
         "icon": "iconoir-github"
       },
       {
