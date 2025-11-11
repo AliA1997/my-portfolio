@@ -4,7 +4,7 @@
     "caption": "Full Stack Engineer",
     "description": "A skilled full-stack engineer in React and C# implementing microservices architecture, managing private npm packages, and excelling in SQL Server to MySQL conversion, UI design, and Next.js integration.",
     "descriptionExtended": "Currently leading design and development initiatives as a Founding Engineer at <span class='text-primary-color'>Qamar Labs</span>.",
-    "location": "📍 Based in St. Augustine, and Aqaba, JO.",
+    "location": "📍 Based in St. Augustine, FL.",
     "media": "/assets/3d-headshot.png",
     "button": {
       "link": "/bio",
@@ -92,7 +92,7 @@
   "facts": {
     "quickFacts": [
       {
-        "count": "6+",
+        "count": "7+",
         "label": "YEARS <br /> EXPERIENCE"
       },
       {
@@ -100,7 +100,7 @@
         "label": "CONSULTATIONS <br /> CONDUCTED"
       },
       {
-        "count": "8+",
+        "count": "7+",
         "label": "PRODUCTION <br /> APPLICATIONS"
       }
     ]
