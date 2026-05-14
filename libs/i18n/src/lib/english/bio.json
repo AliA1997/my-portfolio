@@ -11,6 +11,12 @@
     "heading": "Experience",
     "experience": [
       {
+        "date": "Feburary 2026 - Present",
+        "title": "Backend Software Engineer",
+        "company": "ReachMobi",
+        "isPartTime": false
+      },
+      {
         "date": "June 2022 - Present",
         "title": "Founding Software Engineer",
         "company": "Qamar Labs",
@@ -82,6 +88,10 @@
       {
         "link": "https://www.linkedin.com/in/ali-alhaddad/",
         "icon": "iconoir-linkedin"
+      },
+      {
+        "link": "https://huggingface.co/alialhaddad",
+        "icon": "iconoir-huggingface"
       }
     ]
   },

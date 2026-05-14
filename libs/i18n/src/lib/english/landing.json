@@ -2,9 +2,9 @@
   "bio": {
     "heading": "Ali Alhaddad.",
     "caption": "Full Stack Engineer",
-    "description": "A skilled full-stack engineer in React and C# implementing microservices architecture, managing private npm packages, and excelling in SQL Server to MySQL conversion, UI design, and Next.js integration.",
-    "descriptionExtended": "Currently leading design and development initiatives as a Founding Engineer at <span class='text-primary-color'>Qamar Labs</span>.",
-    "location": "📍 Based in St. Augustine, FL.",
+    "description": "A skilled full-stack engineer specializing in React, C#, and modern microservice architectures, with deep experience in SQL/NoSQL systems, private npm package management, ETL pipelines, and integrating Generative AI into production workflows.",
+    "descriptionExtended": "Currently leading design and development initiatives as a Founding Engineer at <span class='text-primary-color'>Qamar Labs</span>, where I architect scalable systems, implement AI-assisted workflows, and integrate LLM-driven automation into client applications.",
+    "location": "📍 Based in Fort Myers, FL.",
     "media": "/assets/3d-headshot.png",
     "button": {
       "link": "/bio",

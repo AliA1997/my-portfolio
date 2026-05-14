@@ -33,6 +33,10 @@
       {
         "link": "https://www.linkedin.com/in/ali-alhaddad/",
         "icon": "iconoir-linkedin"
+      },
+      {
+        "link": "https://huggingface.co/alialhaddad",
+        "icon": "iconoir-huggingface"
       }
     ]
   },

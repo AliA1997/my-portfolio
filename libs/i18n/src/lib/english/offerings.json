@@ -22,6 +22,17 @@
           "API Development and Integration",
           "Database Development"
         ]
+      },
+      {
+        "icon": "iconoir-robot",
+        "text": "Generative AI & Automation",
+        "topics": [
+          "Generative AI",
+          "ETL Pipelines",
+          "Claude Code",
+          "Github Copilot",
+          "Codex"
+        ]
       }
     ]
   },
@@ -43,6 +54,17 @@
         "- <b>API Development and Integration</b>: Building and integrating APIs to enable seamless communication between different software components, be it internal systems or third-party services.",
         "- <b>Database Development</b>: Designing efficient database schemas and offering database management services that ensure high performance, security and scalability."
       ]
+    },
+    {
+      "title": "Generative AI & Automation",
+      "description": [
+        "- <b>LLM Integration & Prompt Engineering</b>: Building AI-powered workflows and applications using modern LLM APIs, prompt engineering techniques, and structured AI pipelines for automation, moderation, summarization, and recommendations.",
+        "- <b>AI Agents & Workflow Orchestration</b>: Developing AI agents with tools such as LangChain, LangGraph, Hugging Face, and Llama-based models to automate complex business and operational tasks.",
+        "- <b>AI-Powered Application Development</b>: Integrating AI features into web and mobile applications including intelligent search, content generation, recommendation systems, moderation tooling, and conversational interfaces.",
+        "- <b>ETL & Data Processing Pipelines</b>: Building scalable ETL-style workflows and background processing systems in .NET and SQL for data transformation, reporting, integrations, and automation tasks.",
+        "- <b>AI Consulting & Prototyping</b>: Assisting startups and businesses in identifying practical AI opportunities, rapidly prototyping solutions, and implementing production-ready AI integrations.",
+        "- <b>Documentation & Knowledge Transfer</b>: Providing clear technical documentation and guidance for AI systems, workflows, integrations, and operational best practices."
+      ]
     }
   ],
   "profiles": {
@@ -61,6 +83,10 @@
       {
         "link": "https://www.linkedin.com/in/ali-alhaddad/",
         "icon": "iconoir-linkedin"
+      },
+      {
+        "link": "https://huggingface.co/alialhaddad",
+        "icon": "iconoir-huggingface"
       }
     ]
   },
