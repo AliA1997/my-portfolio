@@ -1,0 +1,859 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.0",
+  "pathMappings": {
+    "@aalhaddad/core-components": [
+      "libs/core-components/src/index.ts"
+    ],
+    "@aalhaddad/i18n": [
+      "libs/i18n/src/index.ts"
+    ],
+    "@aalhaddad/store": [
+      "libs/store/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".docker/docker-compose.yaml",
+        "hash": "6841547899925939665"
+      },
+      {
+        "file": ".dockerignore",
+        "hash": "8371422785544518460"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "13404745306227114823"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "9188201835120897554"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "332644423620488888"
+      },
+      {
+        "file": ".nginx/nginx.conf",
+        "hash": "8453352850825070498"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "1743485301228659824"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "2667183413816308602"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "6820402234827505055"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13391140343975966684"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "13192074523490816689"
+      },
+      {
+        "file": "README.md",
+        "hash": "8655428397229758210"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "assets/open-link.svg",
+        "hash": "9371317109158837357"
+      },
+      {
+        "file": "compose.yaml",
+        "hash": "12900953774628336726"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3407785570333453138"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "7473220183190921152"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "nx.json",
+        "hash": "17031388808178753258"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "17121332531759135661"
+      },
+      {
+        "file": "package.json",
+        "hash": "14206697573725741666"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "10118127885002767044"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "11810713488198132402"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "9408361543387076503"
+      }
+    ],
+    "projectFileMap": {
+      "personal-portfolio": [
+        {
+          "file": "apps/personal-portfolio/.env.example",
+          "hash": "12801824592405963159"
+        },
+        {
+          "file": "apps/personal-portfolio/.eslintrc.json",
+          "hash": "5027118656417875903"
+        },
+        {
+          "file": "apps/personal-portfolio/case-studies/alsaqr.mdx",
+          "hash": "14391110345844798721"
+        },
+        {
+          "file": "apps/personal-portfolio/case-studies/autolaborexpert.mdx",
+          "hash": "5618210778957530224"
+        },
+        {
+          "file": "apps/personal-portfolio/case-studies/dental-vision.mdx",
+          "hash": "9394343286859373609"
+        },
+        {
+          "file": "apps/personal-portfolio/case-studies/ensurem-emma.mdx",
+          "hash": "3137835301058043515"
+        },
+        {
+          "file": "apps/personal-portfolio/case-studies/metafire-financial.mdx",
+          "hash": "13335750101918143782"
+        },
+        {
+          "file": "apps/personal-portfolio/case-studies/musuah.mdx",
+          "hash": "18243364979903017014"
+        },
+        {
+          "file": "apps/personal-portfolio/case-studies/nica.mdx",
+          "hash": "12869554709006969896"
+        },
+        {
+          "file": "apps/personal-portfolio/case-studies/skatersfl.mdx",
+          "hash": "10091801302639352126"
+        },
+        {
+          "file": "apps/personal-portfolio/index.d.ts",
+          "hash": "17021007320214501298"
+        },
+        {
+          "file": "apps/personal-portfolio/jest.config.ts",
+          "hash": "278230315432512884"
+        },
+        {
+          "file": "apps/personal-portfolio/next-env.d.ts",
+          "hash": "570608923005160694"
+        },
+        {
+          "file": "apps/personal-portfolio/next.config.js",
+          "hash": "10758134256444328422",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/_app.tsx",
+          "hash": "15374534917559810541",
+          "deps": [
+            "core-components",
+            "store",
+            "npm:aos",
+            "npm:bootstrap",
+            "npm:framer-motion",
+            "npm:next-themes",
+            "npm:next",
+            "npm:react",
+            "npm:react-redux",
+            "npm:redux-persist"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/bio.tsx",
+          "hash": "10622191713833255754",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:next-themes",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/contact.tsx",
+          "hash": "9815148232316066901",
+          "deps": [
+            "npm:@formspree/react",
+            "core-components",
+            "i18n",
+            "npm:react",
+            "npm:reactstrap"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/credentials.tsx",
+          "hash": "5647670871973063275",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/index.tsx",
+          "hash": "7039089457572250749",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:next-themes",
+            "npm:next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/offerings.tsx",
+          "hash": "14823717775224694771",
+          "deps": [
+            "core-components",
+            "i18n",
+            "npm:classnames",
+            "npm:next",
+            "npm:reactstrap"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/portfolio/[entry].tsx",
+          "hash": "12158435314810526838",
+          "deps": [
+            "core-components",
+            "npm:gray-matter",
+            "npm:next",
+            "npm:next-mdx-remote",
+            "npm:remark-gfm"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/portfolio/index.tsx",
+          "hash": "80594847961031563",
+          "deps": [
+            "core-components",
+            "store",
+            "npm:gray-matter",
+            "npm:next",
+            "npm:react-moment",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/posts/[post].tsx",
+          "hash": "14670458396810711004",
+          "deps": [
+            "core-components",
+            "store",
+            "npm:disqus-react",
+            "npm:gray-matter",
+            "npm:next",
+            "npm:next-mdx-remote",
+            "npm:remark-gfm"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/posts/index.tsx",
+          "hash": "12327899762766022558",
+          "deps": [
+            "core-components",
+            "store",
+            "npm:gray-matter",
+            "npm:next",
+            "npm:react",
+            "npm:react-moment",
+            "npm:reactstrap"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/pages/styles-light.scss",
+          "hash": "9027801443850205510"
+        },
+        {
+          "file": "apps/personal-portfolio/pages/styles.scss",
+          "hash": "15102746510046031987"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/access-modifiers-in-csharp.mdx",
+          "hash": "5791116665998261463"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/brief-overview-of-object-orientated-programming.mdx",
+          "hash": "9125053805582270116"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/build-a-simple-webpack-react-app.mdx",
+          "hash": "10940754610848575203"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/how-to-fetch-data-dotnet-core.mdx",
+          "hash": "14574343611452572872"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/one-way-data-flow-vs-unidirectional-data-flow.mdx",
+          "hash": "14855990067204793648"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/seperation-of-concerns.mdx",
+          "hash": "3278481019407523079"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/the-basics-of-express-sessions-and-why-to-use-it.mdx",
+          "hash": "7086634766774713832"
+        },
+        {
+          "file": "apps/personal-portfolio/posts/todo-list-in-redux.mdx",
+          "hash": "2704869104285291888"
+        },
+        {
+          "file": "apps/personal-portfolio/project.json",
+          "hash": "16325108861281124765"
+        },
+        {
+          "file": "apps/personal-portfolio/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/3d-headshot.jpg",
+          "hash": "14710141179012257733"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/3d-headshot.png",
+          "hash": "832649484529951802"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/bg1.png",
+          "hash": "1988836829220948772"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/blog-lg.png",
+          "hash": "888589922242217439"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/blog.png",
+          "hash": "8692426855735803645"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/alsaqr-banner.png",
+          "hash": "13721529113780555200"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/dental-vision-banner.svg",
+          "hash": "7575371531642441324"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/dental-vision-thumbnail-1.png",
+          "hash": "8915774755745363487"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/dental-vision-thumbnail-2.png",
+          "hash": "3958427795369026032"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/dental-vision-thumbnail-3.png",
+          "hash": "8194057730111256433"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/dental-vision.svg",
+          "hash": "5627023188735146439"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/dowell-systems-banner.png",
+          "hash": "11107221561705443974"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/dowell-systems-thumbnail-1.png",
+          "hash": "2690893966142545617"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/dowell-systems-thumbnail-2.png",
+          "hash": "333678694494290404"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/emma-banner.svg",
+          "hash": "15852516526581074618"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/emma-ensurem.png",
+          "hash": "9503136725848555946"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/emma-thumbnail-1.png",
+          "hash": "796413368733242612"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/emma-thumbnail-2.png",
+          "hash": "5972292566960379704"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/ensurem-banner.svg",
+          "hash": "16673133669950008986"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/ensurem-emma.png",
+          "hash": "15265784517385258912"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/ensurem-thumbnail-1.png",
+          "hash": "13671243900169950167"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/ensurem-thumbnail-2.png",
+          "hash": "13137192314171164523"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/ensurem.svg",
+          "hash": "10455583264535686354"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/kikoda-banner.svg",
+          "hash": "10576939646363712095"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/kikoda.svg",
+          "hash": "3635445337999558290"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/metafire-financial-banner.svg",
+          "hash": "16487864122432517051"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/metafire-financial-thumbnail-1.png",
+          "hash": "2872315700237069388"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/metafire-financial-thumbnail-2.png",
+          "hash": "18396608898143481472"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/metafire-financial.svg",
+          "hash": "10008139773355755779"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/musuah-banner.svg",
+          "hash": "15888106784632036147"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/musuah-globe.svg",
+          "hash": "14166641147855115048"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/musuah-thumbnail-1.png",
+          "hash": "11074555492987406271"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/musuah-thumbnail-2.png",
+          "hash": "2241808266531436686"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/nica-banner.svg",
+          "hash": "9983172624704543579"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/nica.svg",
+          "hash": "15316032842959447738"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/case-studies/skatersfl-banner.svg",
+          "hash": "16192447829448677215"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/credentials.png",
+          "hash": "3980987050972365774"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/credentials.svg",
+          "hash": "16553621624906582916"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/favicon.ico",
+          "hash": "11588207224923893975"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/head-logo.svg",
+          "hash": "4741004270314227486"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/cta-icon.svg",
+          "hash": "12531215345958099932"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon-2.svg",
+          "hash": "1412965099350158268"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon.png",
+          "hash": "16578384637710179418"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon.svg",
+          "hash": "5453577243774848321"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon2-2.png",
+          "hash": "6864321371583874432"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon2.png",
+          "hash": "10053155060496083269"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon3-2.png",
+          "hash": "405615848309891611"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/icons/icon3.png",
+          "hash": "11854365188062509294"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/logo/logo.png",
+          "hash": "4547335671602450918"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/portfolio.png",
+          "hash": "9371578947312967029"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/portfolio.svg",
+          "hash": "13372405986879127231"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/signature.png",
+          "hash": "2473473417451227130"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/star-2-2.png",
+          "hash": "5502485838430338589"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/star-2.png",
+          "hash": "1618035679378694751"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/star1.svg",
+          "hash": "1892934735499956438"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/thumbnails/build-a-simple-webpack-react-app.png",
+          "hash": "2205776338638785452"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/thumbnails/developer.png",
+          "hash": "14502712960850507625"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/thumbnails/software-design.png",
+          "hash": "1598264698445348022"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/thumbnails/thumb-1.jpeg",
+          "hash": "7684188436715891615"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/thumbnails/thumb-2.png",
+          "hash": "11302735923170478769"
+        },
+        {
+          "file": "apps/personal-portfolio/public/assets/thumbnails/website-lg.png",
+          "hash": "959896743591982313"
+        },
+        {
+          "file": "apps/personal-portfolio/tests/index.test.tsx",
+          "hash": "13641697238980804497",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/personal-portfolio/tsconfig.json",
+          "hash": "14910371283052791549"
+        },
+        {
+          "file": "apps/personal-portfolio/tsconfig.spec.json",
+          "hash": "4919308245432237962"
+        },
+        {
+          "file": "apps/personal-portfolio/utils/mdx.utils.ts",
+          "hash": "11742203518918188056"
+        },
+        {
+          "file": "apps/personal-portfolio/utils/tracking.utils.tsx",
+          "hash": "3605419691543990566",
+          "deps": [
+            "npm:@hotjar/browser",
+            "npm:@vercel/analytics",
+            "npm:next"
+          ]
+        }
+      ],
+      "store": [
+        {
+          "file": "libs/store/.eslintrc.json",
+          "hash": "14830867113928387670"
+        },
+        {
+          "file": "libs/store/README.md",
+          "hash": "15983487490036612803"
+        },
+        {
+          "file": "libs/store/project.json",
+          "hash": "2472851001066443041"
+        },
+        {
+          "file": "libs/store/src/index.ts",
+          "hash": "14364699501305937034"
+        },
+        {
+          "file": "libs/store/src/lib/blog/index.ts",
+          "hash": "17678792801906800879",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "libs/store/src/lib/blog/types.ts",
+          "hash": "13885505165969884655"
+        },
+        {
+          "file": "libs/store/src/lib/hooks.ts",
+          "hash": "10364339568731894689",
+          "deps": [
+            "npm:react-redux"
+          ]
+        },
+        {
+          "file": "libs/store/src/lib/layout/index.ts",
+          "hash": "5497065594865047283",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "libs/store/src/lib/layout/types.ts",
+          "hash": "2180176320204834209"
+        },
+        {
+          "file": "libs/store/src/lib/store.ts",
+          "hash": "10918688048350535413",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "npm:redux-persist"
+          ]
+        },
+        {
+          "file": "libs/store/tsconfig.json",
+          "hash": "13979398437825372391"
+        },
+        {
+          "file": "libs/store/tsconfig.lib.json",
+          "hash": "6604186782021510538"
+        }
+      ],
+      "i18n": [
+        {
+          "file": "libs/i18n/.eslintrc.json",
+          "hash": "14830867113928387670"
+        },
+        {
+          "file": "libs/i18n/README.md",
+          "hash": "17738017461099636823"
+        },
+        {
+          "file": "libs/i18n/project.json",
+          "hash": "8611475361980360600"
+        },
+        {
+          "file": "libs/i18n/src/index.ts",
+          "hash": "16335703674367136396"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/bio.json",
+          "hash": "14547077465666488198"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/contact.json",
+          "hash": "9928913134267687953"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/credentials.json",
+          "hash": "10404017321871774106"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/index.ts",
+          "hash": "116721583830491269"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/landing.json",
+          "hash": "1791252662686554642"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/offerings.json",
+          "hash": "2740360622767572805"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/portfolio.json",
+          "hash": "13677166257207592229"
+        },
+        {
+          "file": "libs/i18n/tsconfig.json",
+          "hash": "12609354798543878154"
+        },
+        {
+          "file": "libs/i18n/tsconfig.lib.json",
+          "hash": "6604186782021510538"
+        }
+      ],
+      "core-components": [
+        {
+          "file": "libs/core-components/.eslintrc.json",
+          "hash": "14830867113928387670"
+        },
+        {
+          "file": "libs/core-components/README.md",
+          "hash": "12866470826190783278"
+        },
+        {
+          "file": "libs/core-components/project.json",
+          "hash": "4743973666201754012"
+        },
+        {
+          "file": "libs/core-components/src/index.ts",
+          "hash": "15141062420769046685"
+        },
+        {
+          "file": "libs/core-components/src/lib/blog-navbar.component.tsx",
+          "hash": "13596482531106422458",
+          "deps": [
+            "store",
+            "npm:next",
+            "npm:react-moment",
+            "npm:reactstrap"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/head.component.tsx",
+          "hash": "10678406571925840593",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/layout/breadcrumb.component.tsx",
+          "hash": "421608814962491062"
+        },
+        {
+          "file": "libs/core-components/src/lib/layout/footer.component.tsx",
+          "hash": "58142025467796095",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/layout/header.component.tsx",
+          "hash": "18304363349725460397",
+          "deps": [
+            "store",
+            "npm:classnames",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/layout/index.ts",
+          "hash": "15962390781618986765"
+        },
+        {
+          "file": "libs/core-components/src/lib/layout/layout.component.tsx",
+          "hash": "3170584684111952999",
+          "deps": [
+            "npm:classnames",
+            "npm:next",
+            "npm:react",
+            [
+              "npm:react-calendly",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/layout/menu.ts",
+          "hash": "11716530344277516696"
+        },
+        {
+          "file": "libs/core-components/src/lib/portfolio/index.ts",
+          "hash": "7903889821810120396"
+        },
+        {
+          "file": "libs/core-components/src/lib/portfolio/portfolio-footer.component.tsx",
+          "hash": "17946386299720690037",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/portfolio/portfolio-header.component.tsx",
+          "hash": "9780340324073074454"
+        },
+        {
+          "file": "libs/core-components/src/lib/preloader.component.tsx",
+          "hash": "14517118574189649895",
+          "deps": [
+            "npm:framer-motion"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/theme-configurator.component.tsx",
+          "hash": "1893048088037366568",
+          "deps": [
+            "npm:next-themes"
+          ]
+        },
+        {
+          "file": "libs/core-components/src/lib/utils/get-themed-asset.utils.ts",
+          "hash": "14868800155814741551"
+        },
+        {
+          "file": "libs/core-components/src/lib/utils/index.ts",
+          "hash": "12843777679570540779"
+        },
+        {
+          "file": "libs/core-components/tsconfig.json",
+          "hash": "13979398437825372391"
+        },
+        {
+          "file": "libs/core-components/tsconfig.lib.json",
+          "hash": "6604186782021510538"
+        }
+      ]
+    }
+  }
+}

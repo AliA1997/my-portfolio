@@ -1,0 +1,9 @@
+{
+  "run": {
+    "command": "nx run-many --target=build --verbose",
+    "startTime": "2026-05-16T02:54:35.533Z",
+    "endTime": "2026-05-16T02:54:36.679Z",
+    "inner": false
+  },
+  "tasks": []
+}

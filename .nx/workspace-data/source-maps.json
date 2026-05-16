@@ -1,0 +1,402 @@
+{
+  "apps/personal-portfolio": {
+    "root": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.outputPath": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.dev": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.dev": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.dev": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.export": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.export.executor": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.export.options": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.export.options.buildTarget": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.executor": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.outputs": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.jestConfig": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options.passWithNoTests": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.ci": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.configurations.ci.codeCoverage": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.outputs": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "apps/personal-portfolio/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "libs/core-components": {
+    "root": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.outputs": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "libs/core-components/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "libs/i18n": {
+    "root": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.outputs": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "libs/i18n/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "libs/store": {
+    "root": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.outputs": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.options.lintFilePatterns": [
+      "libs/store/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.lint.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}
