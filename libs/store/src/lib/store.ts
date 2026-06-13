@@ -1,5 +1,13 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import {
+  combineReducers,
+  configureStore,
+  type EnhancedStore,
+  type Reducer,
+} from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query/react';
+import type { PersistPartial } from 'redux-persist/es/persistReducer';
+import type { IBlogState } from './blog/types';
+import type { ILayoutState } from './layout/types';
 import {
   FLUSH,
   PAUSE,
@@ -21,14 +29,24 @@ const persistConfig = {
   blacklist: ['layout', 'blog'],
 };
 
+interface CombinedState {
+  layout: ILayoutState;
+  blog: IBlogState;
+}
+
+type RootState = CombinedState & PersistPartial;
+
 const reducer = combineReducers({
   layout: layoutReducer,
   blog: blogReducer,
 });
 
-const persistedReducer = persistReducer(persistConfig, reducer);
+const persistedReducer: Reducer<RootState> = persistReducer(
+  persistConfig,
+  reducer
+);
 
-export const store = configureStore({
+export const store: EnhancedStore<RootState> = configureStore({
   reducer: persistedReducer,
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
@@ -46,4 +64,4 @@ setupListeners(store.dispatch);
 export const persistor = persistStore(store);
 // top-level state
 export type AppDispatch = typeof store.dispatch;
-export type AppState = ReturnType<typeof store.getState>;
+export type AppState = RootState;

@@ -1,0 +1,46 @@
+Compiling TypeScript files for project "store"...
+[1m[31m[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/blog/index.ts[0m:[93m29[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'blogReducer' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m29[0m export const blogReducer = blogSlice.reducer;
+[7m  [0m [91m             ~~~~~~~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/layout/index.ts[0m:[93m45[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'layoutReducer' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m45[0m export const layoutReducer = layoutSlice.reducer;
+[7m  [0m [91m             ~~~~~~~~~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/store.ts[0m:[93m31[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'store' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m31[0m export const store = configureStore({
+[7m  [0m [91m             ~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/store.ts[0m:[93m31[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'store' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m31[0m export const store = configureStore({
+[7m  [0m [91m             ~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/store.ts[0m:[93m31[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'store' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux-thunk@3.1.0_redux@5.0.1/node_modules/redux-thunk/dist/redux-thunk'. This is likely not portable. A type annotation is necessary.
+
+[7m31[0m export const store = configureStore({
+[7m  [0m [91m             ~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/store.ts[0m:[93m31[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'store' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m31[0m export const store = configureStore({
+[7m  [0m [91m             ~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/store.ts[0m:[93m31[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'store' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m31[0m export const store = configureStore({
+[7m  [0m [91m             ~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/hooks.ts[0m:[93m4[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'useAppDispatch' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m4[0m export const useAppDispatch = () => useDispatch<AppDispatch>();
+[7m [0m [91m             ~~~~~~~~~~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/hooks.ts[0m:[93m4[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'useAppDispatch' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux-thunk@3.1.0_redux@5.0.1/node_modules/redux-thunk/dist/redux-thunk'. This is likely not portable. A type annotation is necessary.
+
+[7m4[0m export const useAppDispatch = () => useDispatch<AppDispatch>();
+[7m [0m [91m             ~~~~~~~~~~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/hooks.ts[0m:[93m4[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'useAppDispatch' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m4[0m export const useAppDispatch = () => useDispatch<AppDispatch>();
+[7m [0m [91m             ~~~~~~~~~~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/hooks.ts[0m:[93m4[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'useAppDispatch' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m4[0m export const useAppDispatch = () => useDispatch<AppDispatch>();
+[7m [0m [91m             ~~~~~~~~~~~~~~[0m
+[39m[22m

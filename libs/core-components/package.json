@@ -1,0 +1,20 @@
+{
+  "name": "@aalhaddad/core-components",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "dependencies": {
+    "@aalhaddad/store": "0.0.1",
+    "classnames": "*",
+    "framer-motion": "*",
+    "next-themes": "*",
+    "react-moment": "*",
+    "reactstrap": "*",
+    "tslib": "*"
+  },
+  "peerDependencies": {
+    "next": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

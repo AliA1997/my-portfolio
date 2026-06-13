@@ -1,4 +1,4 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice, type Reducer } from '@reduxjs/toolkit';
 
 import { IBlogState, Post } from './types';
 
@@ -26,4 +26,4 @@ export const blogSlice = createSlice({
 
 export const { setPosts, setCategories, setTags } = blogSlice.actions;
 
-export const blogReducer = blogSlice.reducer;
+export const blogReducer: Reducer<IBlogState> = blogSlice.reducer;

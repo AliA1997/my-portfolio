@@ -20,19 +20,21 @@ const OfferingsPage = () => {
                 <div className="service-sidebar-inner shadow-box">
                   <ul>
                     {en.offerings.navbar.entries.map((item, index) => (
-                      <>
-                        <li key={index}>
-                          <i className={classNames('icon', item.icon)} />
-                          {item.text}
-                        </li>
-                        <Container>
+                      <li key={index} style={{ flexDirection: 'column', display: 'flex', justifyContent: 'center', alignItems: 'flex-start' }}>
+                        
+                            <span className="flex col-md-12">
+                              <i className={classNames('icon', item.icon)} />
+                              {item.text}
+                            </span>
+
+                        <div>
                           {item.topics.map((item, index) => (
                             <p key={index}>
                               - <b>{item}</b>
                             </p>
                           ))}
-                        </Container>
-                      </>
+                        </div>
+                      </li>
                     ))}
                   </ul>
                 </div>

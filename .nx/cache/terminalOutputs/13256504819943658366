@@ -1,0 +1,27 @@
+   [1m[38;2;173;127;168m▲ Next.js 15.3.2[39m[22m
+
+ [37m[1m [22m[39m Skipping linting
+ [37m[1m [22m[39m Checking validity of types ...
+[31mFailed to compile.
+[39m
+[36m./pages/portfolio/[entry].tsx[39m:[33m41[39m:[33m23[39m
+[31m[1mType error[22m[39m: Type '(options?: void | Options | undefined) => void | Transformer<Root, Root>' is not assignable to type 'Pluggable'.
+  Type '(options?: void | Options | undefined) => void | Transformer<Root, Root>' is not assignable to type 'Plugin<any[], any, any>'.
+    Type 'void | Transformer<Root, Root>' is not assignable to type 'void | Transformer<any, any> | undefined'.
+      Type 'Transformer<Root, Root>' is not assignable to type 'void | Transformer<any, any> | undefined'.
+        Type 'Transformer<Root, Root>' is not assignable to type 'Transformer<any, any>'.
+          Types of parameters 'file' and 'file' are incompatible.
+            Type 'import("C:/Users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/vfile@6.0.3/node_modules/vfile/lib/index").VFile' is not assignable to type 'import("C:/Users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/vfile@5.3.7/node_modules/vfile/lib/index").VFile'.
+              Types of property 'messages' are incompatible.
+                Type 'import("C:/Users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/vfile-message@4.0.3/node_modules/vfile-message/lib/index").VFileMessage[]' is not assignable to type 'import("C:/Users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/vfile-message@3.1.4/node_modules/vfile-message/lib/index").VFileMessage[]'.
+                  Property 'position' is missing in type 'import("C:/Users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/vfile-message@4.0.3/node_modules/vfile-message/lib/index").VFileMessage' but required in type 'import("C:/Users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/vfile-message@3.1.4/node_modules/vfile-message/lib/index").VFileMessage'.
+
+[0m [90m 39 |[39m     [90m// Optionally pass remark/rehype plugins[39m[0m
+[0m [90m 40 |[39m     mdxOptions[33m:[39m {[0m
+[0m[31m[1m>[22m[39m[90m 41 |[39m       remarkPlugins[33m:[39m [remarkGfm][33m,[39m[0m
+[0m [90m    |[39m                       [31m[1m^[22m[39m[0m
+[0m [90m 42 |[39m       rehypePlugins[33m:[39m [][33m,[39m[0m
+[0m [90m 43 |[39m     }[33m,[39m[0m
+[0m [90m 44 |[39m     scope[33m:[39m data[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null
+[1m[31mBuild process exited due to code 1  [39m[22m

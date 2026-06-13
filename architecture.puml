@@ -1,0 +1,102 @@
+@startuml personal-portfolio-architecture
+title Personal Portfolio — Application Functionality & Architecture
+
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam defaultTextAlignment center
+skinparam packageStyle rectangle
+
+' =====================================================================
+'  Nx monorepo: one Next.js app (pages router) + three internal libs
+'  consumed via the @aalhaddad/* TS path aliases.
+' =====================================================================
+
+package "apps/personal-portfolio\n(Next.js 15 — Pages Router)" as APP {
+
+  component "pages/_app.tsx\nRoot shell" as AppShell
+  note right of AppShell
+    Wires global providers:
+    • react-redux <Provider> (store)
+    • redux-persist <PersistGate> (persistor)
+    • next-themes <ThemeProvider> (dark default)
+    • framer-motion <AnimatePresence>
+    • Lato font, global SCSS, route-change Preloader
+    • Analytics: Hotjar, GTM, MS Clarity,
+      Vercel Analytics, DebugBear
+  end note
+
+  package "Content pages" as PAGES {
+    component "index / bio /\ncredentials / offerings" as InfoPages
+    component "contact\n(Formspree form)" as ContactPage
+    component "portfolio/\nindex + [entry]" as PortfolioPages
+    component "posts/\nindex + [post]\n(blog)" as PostsPages
+  }
+
+  package "app utils" as UTILS {
+    component "mdx.utils.ts\n(gray-matter + next-mdx-remote)" as Mdx
+    component "tracking.utils.tsx\n(analytics registrars)" as Tracking
+  }
+}
+
+package "libs/core-components\n@aalhaddad/core-components" as CORE {
+  component "Layout\n(Header, Footer, Breadcrumb)" as Layout
+  component "BlogNavbar" as BlogNavbar
+  component "Portfolio header/footer" as PortfolioCmp
+  component "Preloader" as Preloader
+  component "ThemeConfigurator" as ThemeCfg
+  component "getThemedContent()\n(theme-aware assets)" as ThemedUtil
+}
+
+package "libs/store\n@aalhaddad/store" as STORE {
+  component "configureStore + persistor\n(redux-persist)" as Store
+  component "layout slice\nlanguage (EN/FR), themeMode,\nmobile navbar" as LayoutSlice
+  component "blog slice\nposts, categories, tags\n+ Post type" as BlogSlice
+  component "typed hooks\nuseAppDispatch / useAppSelector" as Hooks
+}
+
+package "libs/i18n\n@aalhaddad/i18n" as I18N {
+  component "en translations" as En
+}
+
+' ---------------- App shell composition ----------------
+AppShell --> Preloader : loading state
+AppShell --> Store : Provider / PersistGate
+AppShell --> Tracking : register analytics
+AppShell --> PAGES : renders active route
+
+' ---------------- Pages -> libs ----------------
+InfoPages --> Layout
+InfoPages --> En : copy
+
+ContactPage --> Layout
+
+PortfolioPages --> Layout
+PortfolioPages --> PortfolioCmp
+PortfolioPages --> BlogSlice : Post type
+PortfolioPages --> Mdx : render entry MDX
+
+PostsPages --> Layout
+PostsPages --> BlogNavbar
+PostsPages --> BlogSlice : posts / Post type
+PostsPages --> Mdx : render post MDX
+
+' ---------------- Layout internals ----------------
+Layout --> LayoutSlice : theme + language state
+Layout --> Hooks : read/dispatch
+Layout --> ThemedUtil
+ThemeCfg --> LayoutSlice : toggle theme/lang
+BlogNavbar --> BlogSlice : Post type
+
+' ---------------- Store internals ----------------
+Store --> LayoutSlice
+Store --> BlogSlice
+Hooks --> Store
+
+' ---------------- Build/dependency note ----------------
+note bottom of CORE
+  Build order (Nx ^build, @nx/js:tsc):
+  store, i18n  →  core-components  →  app
+  core-components depends on store; i18n is standalone.
+end note
+
+@enduml

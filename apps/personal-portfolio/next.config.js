@@ -12,13 +12,15 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.APP_ENV === 'production',
   },
-  nx: {
-    // Set this to true if you would like to use SVGR
-    // See: https://github.com/gregberge/svgr
-    svgr: false,
-  },
   eslint: {
     ignoreDuringBuilds: true
+  },
+    webpack(config) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      punycode: require.resolve('punycode/'),
+    };
+    return config;
   }
 };
 

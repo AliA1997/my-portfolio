@@ -1,0 +1,18 @@
+Compiling TypeScript files for project "store"...
+[1m[31m[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/blog/index.ts[0m:[93m29[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'blogReducer' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m29[0m export const blogReducer = blogSlice.reducer;
+[7m  [0m [91m             ~~~~~~~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/layout/index.ts[0m:[93m45[0m:[93m14[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'layoutReducer' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m45[0m export const layoutReducer = layoutSlice.reducer;
+[7m  [0m [91m             ~~~~~~~~~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/store.ts[0m:[93m29[0m:[93m7[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'persistedReducer' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m29[0m const persistedReducer = persistReducer(persistConfig, reducer);
+[7m  [0m [91m      ~~~~~~~~~~~~~~~~[0m
+[96m/Users/devmt/qamar-labs-web/my-portfolio/libs/store/src/lib/store.ts[0m:[93m29[0m:[93m7[0m - [91merror[0m[90m TS2742: [0mThe inferred type of 'persistedReducer' cannot be named without a reference to 'c:/users/devmt/qamar-labs-web/my-portfolio/node_modules/.pnpm/redux@5.0.1/node_modules/redux/dist/redux'. This is likely not portable. A type annotation is necessary.
+
+[7m29[0m const persistedReducer = persistReducer(persistConfig, reducer);
+[7m  [0m [91m      ~~~~~~~~~~~~~~~~[0m
+[39m[22m

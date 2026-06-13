@@ -1,3 +1,5 @@
 {
-  "processId": 23876
+  "processId": 312,
+  "socketPath": "\\\\.\\pipe\\nx\\C:\\Users\\devmt\\AppData\\Local\\Temp\\232090468db1b617961b\\d.sock",
+  "nxVersion": "22.7.2"
 }

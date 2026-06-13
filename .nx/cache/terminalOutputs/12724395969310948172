@@ -1,0 +1,19 @@
+   [1m[38;2;173;127;168m▲ Next.js 15.3.2[39m[22m
+
+ [37m[1m [22m[39m Skipping linting
+ [37m[1m [22m[39m Checking validity of types ...
+[31mFailed to compile.
+[39m
+[36m./next.config.js[39m:[33m18[39m:[33m5[39m
+[31m[1mType error[22m[39m: Type '{ svgr: false; }' is not assignable to type '{ babelUpwardRootMode?: boolean | undefined; fileReplacements?: { replace: string; with: string; }[] | undefined; assets?: AssetGlobPattern[] | undefined; }'.
+  Object literal may only specify known properties, and 'svgr' does not exist in type '{ babelUpwardRootMode?: boolean | undefined; fileReplacements?: { replace: string; with: string; }[] | undefined; assets?: AssetGlobPattern[] | undefined; }'.
+
+[0m [90m 16 |[39m     [90m// Set this to true if you would like to use SVGR[39m[0m
+[0m [90m 17 |[39m     [90m// See: https://github.com/gregberge/svgr[39m[0m
+[0m[31m[1m>[22m[39m[90m 18 |[39m     svgr[33m:[39m [36mfalse[39m[33m,[39m[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 19 |[39m   }[33m,[39m[0m
+[0m [90m 20 |[39m   eslint[33m:[39m {[0m
+[0m [90m 21 |[39m     ignoreDuringBuilds[33m:[39m [36mtrue[39m[0m
+Next.js build worker exited with code: 1 and signal: null
+[1m[31mBuild process exited due to code 1  [39m[22m

@@ -4,39 +4,39 @@
     "details": {
       "heading": "Bio",
       "name": "Ali Alhaddad",
-      "description": "Hard-working developer with a flair for creating elegant solutions to complex problems. Team player with a can-do attitude and a strong focus on client satisfaction. Diverse experience with modern technologies and cloud providers like AWS and GCP with enterprise DevOps experience. Likes to contribute to open-source and create apps on his free time."
+      "description": "Full-stack software engineer with 8 years of experience building scalable web applications, SaaS platforms, and data-driven solutions. Specialized in React, Next.js, TypeScript, C#, .NET, and PostgreSQL, with experience designing cloud-native systems on AWS. Passionate about modern software architecture, AI-assisted development, and solving complex business problems through practical engineering. Experienced in startups, consulting, and enterprise environments, with a track record of modernizing legacy systems, building microservices, and delivering products used by thousands of users."
     }
   },
   "experience": {
     "heading": "Experience",
     "experience": [
       {
-        "date": "Feburary 2026 - Present",
+        "date": "June 2022 - Present",
+        "title": "Founding Software Engineer",
+        "company": "Qamar Labs",
+        "isPartTime": false
+      },
+      {
+        "date": "Feburary 2026 - May 2026",
         "title": "Backend Software Engineer",
         "company": "ReachMobi",
         "isPartTime": false
       },
       {
-        "date": "June 2022 - Present",
-        "title": "Founding Software Engineer",
-        "company": "Qamar Labs",
-        "isPartTime": true
-      },
-      {
-        "date": "August 2024 - May 2025",
-        "title": "Full Stack Engineer",
-        "company": "Dowell Systems Inc",
-        "isPartTime": false
-      },
-      {
         "date": "March 2021 - February 2024",
-        "title": "Full Stack Engineer",
+        "title": "Full Stack Software Engineer",
         "company": "Ensurem",
         "isPartTime": false
       },
       {
+        "date": "October 2018 - March 2021",
+        "title": "Full Stack Software Engineer",
+        "company": "Kikoda Software Consulting",
+        "isPartTime": false
+      },
+      {
         "date": "February 2023 - July 2023",
-        "title": "Chief Technology Officer",
+        "title": "Chief Technology Officer/Software Engineer",
         "company": "NoogaNaega",
         "isPartTime": true
       },
@@ -45,12 +45,6 @@
         "title": "Founding Software Engineer",
         "company": "Metafire Financial",
         "isPartTime": true
-      },
-      {
-        "date": "October 2018 - March 2021",
-        "title": "Software Engineer",
-        "company": "Kikoda Software Consulting",
-        "isPartTime": false
       }
     ]
   },

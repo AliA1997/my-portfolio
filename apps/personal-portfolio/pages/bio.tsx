@@ -9,7 +9,7 @@ const BioPage = () => {
     <Layout wrapperClass="main-aboutpage">
       <section className="about-area">
         <div className="container">
-          <div className="d-flex about-me-wrap align-items-start gap-24">
+          <div className="d-flex about-me-wrap align-items-end gap-24">
             <div data-aos="zoom-in">
               <div className="about-image-box shadow-box">
                 <img src="/assets/bg1.png" alt="BG" className="bg-img" />

@@ -1,4 +1,4 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice, type Reducer } from '@reduxjs/toolkit';
 
 import { ILayoutState, LanguageEnum, ThemeModeEnum } from './types';
 
@@ -42,4 +42,4 @@ export const {
   toggleThemeMode,
 } = layoutSlice.actions;
 
-export const layoutReducer = layoutSlice.reducer;
+export const layoutReducer: Reducer<ILayoutState> = layoutSlice.reducer;

@@ -1,0 +1,15 @@
+{
+  "name": "@aalhaddad/store",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "dependencies": {
+    "@reduxjs/toolkit": "*",
+    "react-redux": "*",
+    "redux-persist": "*",
+    "tslib": "*"
+  },
+  "peerDependencies": {
+    "react": "*"
+  }
+}

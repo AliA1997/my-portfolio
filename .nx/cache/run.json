@@ -1,9 +1,21 @@
 {
   "run": {
-    "command": "nx run-many --target=build --verbose",
-    "startTime": "2026-05-16T02:54:35.533Z",
-    "endTime": "2026-05-16T02:54:36.679Z",
+    "command": "nx serve personal-portfolio",
+    "startTime": "2026-06-13T19:15:15.143Z",
+    "endTime": "2026-06-13T19:22:49.409Z",
     "inner": false
   },
-  "tasks": []
+  "tasks": [
+    {
+      "taskId": "personal-portfolio:serve:development",
+      "target": "serve",
+      "projectName": "personal-portfolio",
+      "hash": "11547921476615058299",
+      "startTime": "2026-06-13T19:15:15.525Z",
+      "endTime": "2026-06-13T19:22:49.364Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
 }
