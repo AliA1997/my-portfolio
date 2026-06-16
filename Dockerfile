@@ -11,6 +11,12 @@ COPY package-lock.json /app/package-lock.json
 # Same as npm install
 RUN npm ci
 
+# Nx probes the machine id for telemetry/cache; on minimal images without
+# /etc/machine-id or the `hostname` binary this prints
+# "/bin/sh: line 1: hostname: command not found". Seed a machine id so the
+# probe succeeds and never falls through to `hostname`.
+RUN cat /proc/sys/kernel/random/uuid | tr -d '-' > /etc/machine-id
+
 COPY . /app
 
 ENV CI=true

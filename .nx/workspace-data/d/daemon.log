@@ -7244,3 +7244,31 @@ Deleted:
 [NX v22.7.2 Daemon Client] - 2026-06-16T04:48:22.132Z - [Messenger] Sending message type: PROCESS_IN_BACKGROUND
 [NX v22.7.2 Daemon Client] - 2026-06-16T04:48:22.181Z - [Messenger] Message sent
 [NX v22.7.2 Daemon Client] - 2026-06-16T04:48:25.122Z - [Messenger] Received message, length: 2
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:54.374Z - [Messenger] Received message, length: 905743
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:54.448Z - [Messenger] Received message, length: 905743
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:55.770Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:55.794Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:55.818Z - [Messenger] Received message, length: 15228
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:56.548Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:56.662Z - [Messenger] Setting up socket listeners
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:56.663Z - [Messenger] listen() complete
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:56.665Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:13:56.666Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:07.603Z - [Messenger] Received message, length: 905743
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:08.657Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:08.659Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:08.678Z - [Messenger] Received message, length: 15229
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:09.529Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:09.811Z - [Messenger] Setting up socket listeners
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:09.820Z - [Messenger] listen() complete
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:09.821Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:09.823Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:20.505Z - [Messenger] Received message, length: 905743
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:21.622Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:21.627Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:21.683Z - [Messenger] Received message, length: 15227
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:22.805Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:22.822Z - [Messenger] Setting up socket listeners
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:22.823Z - [Messenger] listen() complete
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:22.849Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.7.2 Daemon Client] - 2026-06-16T05:14:22.851Z - [Messenger] Message sent
