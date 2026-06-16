@@ -1,21 +1,54 @@
 {
   "run": {
-    "command": "nx serve personal-portfolio",
-    "startTime": "2026-06-13T19:15:15.143Z",
-    "endTime": "2026-06-13T19:22:49.409Z",
+    "command": "nx run-many --target=build",
+    "startTime": "2026-06-16T04:40:55.694Z",
+    "endTime": "2026-06-16T04:48:21.425Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "personal-portfolio:serve:development",
-      "target": "serve",
-      "projectName": "personal-portfolio",
-      "hash": "11547921476615058299",
-      "startTime": "2026-06-13T19:15:15.525Z",
-      "endTime": "2026-06-13T19:22:49.364Z",
+      "taskId": "store:build",
+      "target": "build",
+      "projectName": "store",
+      "hash": "1724406285652843410",
+      "startTime": "2026-06-16T04:41:00.803Z",
+      "endTime": "2026-06-16T04:41:01.822Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "core-components:build",
+      "target": "build",
+      "projectName": "core-components",
+      "hash": "5700749574275602429",
+      "startTime": "2026-06-16T04:41:01.971Z",
+      "endTime": "2026-06-16T04:41:04.382Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "i18n:build",
+      "target": "build",
+      "projectName": "i18n",
+      "hash": "15160431955715878607",
+      "startTime": "2026-06-16T04:41:04.438Z",
+      "endTime": "2026-06-16T04:41:24.197Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
+    },
+    {
+      "taskId": "personal-portfolio:build:production",
+      "target": "build",
+      "projectName": "personal-portfolio",
+      "hash": "15132371007965851423",
+      "startTime": "2026-06-16T04:41:24.387Z",
+      "endTime": "2026-06-16T04:47:57.239Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
     }
   ]
 }

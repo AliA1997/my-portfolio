@@ -7158,3 +7158,89 @@ Deleted:
 [NX v22.7.2 Daemon Server] - 2026-06-13T19:51:52.097Z - Established a connection. Number of open connections: 3
 [NX v22.7.2 Daemon Server] - 2026-06-13T19:51:52.097Z - Received raw message of length 42
 [NX v22.7.2 Daemon Server] - 2026-06-13T19:51:52.098Z - Received json message of type REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:00.197Z - [Messenger] Received message, length: 905743
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:01.253Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:01.254Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:01.264Z - [Messenger] Received message, length: 15228
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:01.503Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:01.524Z - [Messenger] Setting up socket listeners
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:01.526Z - [Messenger] listen() complete
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:01.527Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:01.528Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:18.913Z - [Messenger] Received message, length: 905743
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:19.973Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:19.974Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:19.980Z - [Messenger] Received message, length: 15229
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:20.312Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:20.322Z - [Messenger] Setting up socket listeners
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:20.323Z - [Messenger] listen() complete
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:20.324Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:20.325Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:27.119Z - [Messenger] Received message, length: 905743
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:28.189Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:28.190Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:28.193Z - [Messenger] Received message, length: 15229
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:28.418Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:28.425Z - [Messenger] Setting up socket listeners
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:28.426Z - [Messenger] listen() complete
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:28.428Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:28.429Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:34.495Z - [Messenger] Received message, length: 905743
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:35.554Z - [Messenger] Sending message type: GET_CONTEXT_FILE_DATA
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:35.555Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:35.561Z - [Messenger] Received message, length: 15229
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:35.893Z - [ProjectGraphListener] Socket closed, triggering reconnection
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:35.929Z - [Messenger] Setting up socket listeners
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:35.932Z - [Messenger] listen() complete
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:35.933Z - [Messenger] Sending message type: REGISTER_PROJECT_GRAPH_LISTENER
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:35.935Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:38.750Z - [Messenger] Setting up socket listeners
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:38.752Z - [Messenger] listen() complete
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:40.357Z - [Messenger] Sending message type: GET_NX_CONSOLE_STATUS
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:40.359Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:40.402Z - [Messenger] Received message, length: 22
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:41.143Z - [Messenger] Sending message type: REQUEST_PROJECT_GRAPH
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:41.146Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:41.160Z - [Messenger] Received message, length: 47
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:44.611Z - [Messenger] Received message, length: 142
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:44.759Z - [Messenger] Received message, length: 101
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:44.803Z - [Messenger] Received message, length: 47
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:44.807Z - [Messenger] Received message, length: 47
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:45.282Z - [Messenger] Received message, length: 47
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:45.290Z - [Messenger] Received message, length: 905750
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:45.364Z - [Messenger] Sending message type: PRE_TASKS_EXECUTION
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:45.366Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:45.398Z - [Messenger] Received message, length: 2
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:49.031Z - [Messenger] Sending message type: HASH_TASKS
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:49.041Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:40:49.389Z - [Messenger] Received message, length: 134667
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:00.225Z - [Messenger] Sending message type: GET_ESTIMATED_TASK_TIMINGS
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:00.228Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:00.576Z - [Messenger] Received message, length: 143
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:00.815Z - [Messenger] Sending message type: OUTPUTS_HASHES_MATCH_BATCH
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:00.816Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:00.824Z - [Messenger] Received message, length: 7
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:01.823Z - [Messenger] Sending message type: RECORD_OUTPUTS_HASH_BATCH
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:01.825Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:01.945Z - [Messenger] Received message, length: 2
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:03.334Z - [Messenger] Sending message type: OUTPUTS_HASHES_MATCH_BATCH
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:03.336Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:03.344Z - [Messenger] Received message, length: 7
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:04.382Z - [Messenger] Sending message type: RECORD_OUTPUTS_HASH_BATCH
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:04.383Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:04.424Z - [Messenger] Received message, length: 2
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:24.197Z - [Messenger] Sending message type: RECORD_OUTPUTS_HASH_BATCH
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:24.199Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:41:24.233Z - [Messenger] Received message, length: 2
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:47:57.239Z - [Messenger] Sending message type: RECORD_OUTPUTS_HASH_BATCH
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:47:57.241Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:47:57.424Z - [Messenger] Received message, length: 2
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:48:21.512Z - [Messenger] Sending message type: RECORD_TASK_RUNS
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:48:21.514Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:48:21.529Z - [Messenger] Received message, length: 4
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:48:21.531Z - [Messenger] Sending message type: GET_FLAKY_TASKS
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:48:21.533Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:48:21.542Z - [Messenger] Received message, length: 2
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:48:22.132Z - [Messenger] Sending message type: PROCESS_IN_BACKGROUND
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:48:22.181Z - [Messenger] Message sent
+[NX v22.7.2 Daemon Client] - 2026-06-16T04:48:25.122Z - [Messenger] Received message, length: 2

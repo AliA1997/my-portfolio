@@ -16,64 +16,80 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".prettierrc",
-        "hash": "6820402234827505055"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "13391140343975966684"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "332644423620488888"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "7473220183190921152"
-      },
-      {
-        "file": "libs/.gitkeep",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "11810713488198132402"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "9188201835120897554"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "16559654159777822978"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "2667183413816308602"
-      },
-      {
-        "file": "package.json",
-        "hash": "15840093879260248120"
+        "file": ".editorconfig",
+        "hash": "11532813898455409296"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "12443785250540370271"
       },
       {
+        "file": "pnpm-lock.yaml",
+        "hash": "16559654159777822978"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "1743485301228659824"
+      },
+      {
         "file": ".nginx/nginx.conf",
         "hash": "8453352850825070498"
       },
       {
-        "file": ".editorconfig",
-        "hash": "11532813898455409296"
+        "file": "tools/tsconfig.tools.json",
+        "hash": "11810713488198132402"
+      },
+      {
+        "file": "README.md",
+        "hash": "8655428397229758210"
+      },
+      {
+        "file": "nx.json",
+        "hash": "9224186543094588103"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "7473220183190921152"
+      },
+      {
+        "file": ".dockerignore",
+        "hash": "8371422785544518460"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "6820402234827505055"
       },
       {
         "file": "assets/open-link.svg",
         "hash": "9371317109158837357"
       },
       {
-        "file": "README.md",
-        "hash": "8655428397229758210"
+        "file": "jest.config.ts",
+        "hash": "3407785570333453138"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "9188201835120897554"
+      },
+      {
+        "file": "architecture.puml",
+        "hash": "14574880400236929090"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "2667183413816308602"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "13192074523490816689"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13391140343975966684"
       },
       {
         "file": ".eslintignore",
@@ -84,39 +100,158 @@
         "hash": "12900953774628336726"
       },
       {
-        "file": ".dockerignore",
-        "hash": "8371422785544518460"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "1743485301228659824"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "13192074523490816689"
-      },
-      {
-        "file": "architecture.puml",
-        "hash": "14574880400236929090"
-      },
-      {
-        "file": "nx.json",
-        "hash": "9224186543094588103"
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
       },
       {
         "file": ".docker/docker-compose.yaml",
         "hash": "6841547899925939665"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "3407785570333453138"
+        "file": "package.json",
+        "hash": "15840093879260248120"
       },
       {
-        "file": "apps/.gitkeep",
-        "hash": "3244421341483603138"
+        "file": ".gitignore",
+        "hash": "332644423620488888"
       }
     ],
     "projectFileMap": {
+      "i18n": [
+        {
+          "file": "libs/i18n/.eslintrc.json",
+          "hash": "14830867113928387670"
+        },
+        {
+          "file": "libs/i18n/README.md",
+          "hash": "17738017461099636823"
+        },
+        {
+          "file": "libs/i18n/package.json",
+          "hash": "14027376333401249793",
+          "deps": [
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/i18n/project.json",
+          "hash": "4332138000137582899"
+        },
+        {
+          "file": "libs/i18n/src/index.ts",
+          "hash": "16335703674367136396"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/bio.json",
+          "hash": "12417245310155576342"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/contact.json",
+          "hash": "9928913134267687953"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/credentials.json",
+          "hash": "10404017321871774106"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/index.ts",
+          "hash": "116721583830491269"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/landing.json",
+          "hash": "1791252662686554642"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/offerings.json",
+          "hash": "6428799898768474984"
+        },
+        {
+          "file": "libs/i18n/src/lib/english/portfolio.json",
+          "hash": "13677166257207592229"
+        },
+        {
+          "file": "libs/i18n/tsconfig.json",
+          "hash": "12609354798543878154"
+        },
+        {
+          "file": "libs/i18n/tsconfig.lib.json",
+          "hash": "5045385052991399733"
+        }
+      ],
+      "store": [
+        {
+          "file": "libs/store/.eslintrc.json",
+          "hash": "14830867113928387670"
+        },
+        {
+          "file": "libs/store/README.md",
+          "hash": "15983487490036612803"
+        },
+        {
+          "file": "libs/store/package.json",
+          "hash": "7472857735125440944",
+          "deps": [
+            "npm:react",
+            "npm:@reduxjs/toolkit",
+            "npm:react-redux",
+            "npm:redux-persist",
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/store/project.json",
+          "hash": "5749511506010940410"
+        },
+        {
+          "file": "libs/store/src/index.ts",
+          "hash": "14364699501305937034"
+        },
+        {
+          "file": "libs/store/src/lib/blog/index.ts",
+          "hash": "12119685476137396777",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "libs/store/src/lib/blog/types.ts",
+          "hash": "13885505165969884655"
+        },
+        {
+          "file": "libs/store/src/lib/hooks.ts",
+          "hash": "11769306594296410564",
+          "deps": [
+            "npm:react-redux"
+          ]
+        },
+        {
+          "file": "libs/store/src/lib/layout/index.ts",
+          "hash": "13112840605934687677",
+          "deps": [
+            "npm:@reduxjs/toolkit"
+          ]
+        },
+        {
+          "file": "libs/store/src/lib/layout/types.ts",
+          "hash": "2180176320204834209"
+        },
+        {
+          "file": "libs/store/src/lib/store.ts",
+          "hash": "249209320419358578",
+          "deps": [
+            "npm:@reduxjs/toolkit",
+            "npm:redux-persist"
+          ]
+        },
+        {
+          "file": "libs/store/tsconfig.json",
+          "hash": "13979398437825372391"
+        },
+        {
+          "file": "libs/store/tsconfig.lib.json",
+          "hash": "5045385052991399733"
+        }
+      ],
       "core-components": [
         {
           "file": "libs/core-components/.eslintrc.json",
@@ -254,141 +389,6 @@
           "hash": "5045385052991399733"
         }
       ],
-      "store": [
-        {
-          "file": "libs/store/.eslintrc.json",
-          "hash": "14830867113928387670"
-        },
-        {
-          "file": "libs/store/README.md",
-          "hash": "15983487490036612803"
-        },
-        {
-          "file": "libs/store/package.json",
-          "hash": "7472857735125440944",
-          "deps": [
-            "npm:react",
-            "npm:@reduxjs/toolkit",
-            "npm:react-redux",
-            "npm:redux-persist",
-            "npm:tslib"
-          ]
-        },
-        {
-          "file": "libs/store/project.json",
-          "hash": "5749511506010940410"
-        },
-        {
-          "file": "libs/store/src/index.ts",
-          "hash": "14364699501305937034"
-        },
-        {
-          "file": "libs/store/src/lib/blog/index.ts",
-          "hash": "12119685476137396777",
-          "deps": [
-            "npm:@reduxjs/toolkit"
-          ]
-        },
-        {
-          "file": "libs/store/src/lib/blog/types.ts",
-          "hash": "13885505165969884655"
-        },
-        {
-          "file": "libs/store/src/lib/hooks.ts",
-          "hash": "11769306594296410564",
-          "deps": [
-            "npm:react-redux"
-          ]
-        },
-        {
-          "file": "libs/store/src/lib/layout/index.ts",
-          "hash": "13112840605934687677",
-          "deps": [
-            "npm:@reduxjs/toolkit"
-          ]
-        },
-        {
-          "file": "libs/store/src/lib/layout/types.ts",
-          "hash": "2180176320204834209"
-        },
-        {
-          "file": "libs/store/src/lib/store.ts",
-          "hash": "249209320419358578",
-          "deps": [
-            "npm:@reduxjs/toolkit",
-            "npm:redux-persist"
-          ]
-        },
-        {
-          "file": "libs/store/tsconfig.json",
-          "hash": "13979398437825372391"
-        },
-        {
-          "file": "libs/store/tsconfig.lib.json",
-          "hash": "5045385052991399733"
-        }
-      ],
-      "i18n": [
-        {
-          "file": "libs/i18n/.eslintrc.json",
-          "hash": "14830867113928387670"
-        },
-        {
-          "file": "libs/i18n/README.md",
-          "hash": "17738017461099636823"
-        },
-        {
-          "file": "libs/i18n/package.json",
-          "hash": "14027376333401249793",
-          "deps": [
-            "npm:tslib"
-          ]
-        },
-        {
-          "file": "libs/i18n/project.json",
-          "hash": "4332138000137582899"
-        },
-        {
-          "file": "libs/i18n/src/index.ts",
-          "hash": "16335703674367136396"
-        },
-        {
-          "file": "libs/i18n/src/lib/english/bio.json",
-          "hash": "14547077465666488198"
-        },
-        {
-          "file": "libs/i18n/src/lib/english/contact.json",
-          "hash": "9928913134267687953"
-        },
-        {
-          "file": "libs/i18n/src/lib/english/credentials.json",
-          "hash": "10404017321871774106"
-        },
-        {
-          "file": "libs/i18n/src/lib/english/index.ts",
-          "hash": "116721583830491269"
-        },
-        {
-          "file": "libs/i18n/src/lib/english/landing.json",
-          "hash": "1791252662686554642"
-        },
-        {
-          "file": "libs/i18n/src/lib/english/offerings.json",
-          "hash": "2740360622767572805"
-        },
-        {
-          "file": "libs/i18n/src/lib/english/portfolio.json",
-          "hash": "13677166257207592229"
-        },
-        {
-          "file": "libs/i18n/tsconfig.json",
-          "hash": "12609354798543878154"
-        },
-        {
-          "file": "libs/i18n/tsconfig.lib.json",
-          "hash": "5045385052991399733"
-        }
-      ],
       "personal-portfolio": [
         {
           "file": "apps/personal-portfolio/.env.example",
@@ -401,10 +401,6 @@
         {
           "file": "apps/personal-portfolio/case-studies/alsaqr.mdx",
           "hash": "14391110345844798721"
-        },
-        {
-          "file": "apps/personal-portfolio/case-studies/autolaborexpert.mdx",
-          "hash": "5618210778957530224"
         },
         {
           "file": "apps/personal-portfolio/case-studies/dental-vision.mdx",
@@ -467,7 +463,7 @@
         },
         {
           "file": "apps/personal-portfolio/pages/bio.tsx",
-          "hash": "10622191713833255754",
+          "hash": "9929166192502541803",
           "deps": [
             "core-components",
             "i18n",
@@ -508,7 +504,7 @@
         },
         {
           "file": "apps/personal-portfolio/pages/offerings.tsx",
-          "hash": "14823717775224694771",
+          "hash": "8603235885575823205",
           "deps": [
             "core-components",
             "i18n",
@@ -568,11 +564,11 @@
         },
         {
           "file": "apps/personal-portfolio/pages/styles-light.scss",
-          "hash": "9027801443850205510"
+          "hash": "8535838942191649915"
         },
         {
           "file": "apps/personal-portfolio/pages/styles.scss",
-          "hash": "15102746510046031987"
+          "hash": "11107332396859552384"
         },
         {
           "file": "apps/personal-portfolio/posts/access-modifiers-in-csharp.mdx",
@@ -584,7 +580,7 @@
         },
         {
           "file": "apps/personal-portfolio/posts/build-a-simple-webpack-react-app.mdx",
-          "hash": "10940754610848575203"
+          "hash": "13714200675206215258"
         },
         {
           "file": "apps/personal-portfolio/posts/how-to-fetch-data-dotnet-core.mdx",

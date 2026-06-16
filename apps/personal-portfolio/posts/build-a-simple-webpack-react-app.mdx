@@ -410,8 +410,7 @@ export default class PeopleList extends PureComponent {
         //After converting to json then set the data state to the results property of the response.
         .then(resJson => {
             this.setState({data: resJson.results});
-            //For every promise make sure to catch any errors.
-        }).catch(err => console.log("People Error----------", err));
+        });
     }
     render() {
         return (
@@ -456,9 +455,7 @@ export default class StarshipList extends PureComponent {
             //THen convert the response to json.
         }).then(res => res.json())
         //THen set the state of the data to the results.
-        .then(resJson => this.setState({data: resJson.results}))
-        //Then catch any errors when retrieving data from the starships api url.
-        .catch(err => console.log("Get Starships Error---------", err));
+        .then(resJson => this.setState({data: resJson.results}));
     }
     render() {
         return (
@@ -500,9 +497,7 @@ export default class PlanetList extends PureComponent {
             //COnvert the response to json.
         }).then(res => res.json())
         //Now set the state of the data.
-        .then(resJson => this.setState({data: resJson.results}))
-        //Catch any error from the promise.
-        .catch(err => console.log("Get Planets Error------", err));
+        .then(resJson => this.setState({data: resJson.results}));
     }
     render() {
         return (
